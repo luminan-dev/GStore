@@ -1,0 +1,326 @@
+.intro {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  .top {
+    margin-block: 32px 24px;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .left-box {
+    max-width: 800px;
+    background-image: url("../images/man-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 32px;
+    padding: 32px;
+    .bargain {
+      color: black;
+      background-color: #fff;
+      padding: 8px 12px;
+      border-radius: 900px;
+      max-width: 120px;
+    }
+    .title {
+      font-weight: 500;
+      font-size: 40px;
+      color: #fff;
+      line-height: 110.00000000000001%;
+      max-width: 347px;
+      margin-top: 31px;
+      margin-bottom: 12px;
+    }
+    .desc {
+      color: #fff;
+      font-size: 16px;
+      line-height: 140%;
+      margin-bottom: 16px;
+    }
+    .choose-btn {
+      padding: 14px 16px;
+      background-color: black;
+      color: #fff;
+      font-weight: 500;
+      border-radius: 12px;
+      margin-bottom: 24px;
+      max-width: 144px;
+    }
+    .content-box {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .right-box {
+    background: radial-gradient(
+        89.28% 98.65% at 77.86% 13.62%,
+        #fdc830 0%,
+        #f37335 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    max-width: 384px;
+    max-height: 334px;
+    border-radius: 32px;
+    justify-content: space-between;
+    opacity: 1;
+    padding: 32px;
+    .content-box {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+  .bargain-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .time-box {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    .time {
+      color: black;
+      background-color: #fff;
+      display: flex;
+      border-radius: 8px;
+      padding: 9px;
+    }
+  }
+  .title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 110.00000000000001%;
+    color: #fff;
+  }
+  .cart {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    .name {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 110.00000000000001%;
+      color: #fff;
+    }
+    .sale {
+      display: flex;
+      opacity: 0.7;
+      justify-content: space-between;
+      color: #fff;
+      margin-block: 8px 16px;
+    }
+    .price {
+      display: flex;
+      justify-content: space-between;
+      color: #fff;
+    }
+    .old {
+      opacity: 0.7;
+      text-decoration: line-through;
+    }
+  }
+  .iphone {
+    max-width: 104px;
+    max-height: 128px;
+    background-color: #fff;
+    padding: 19px 12px;
+    border-radius: 16px;
+  }
+  .bottom {
+    .list {
+      display: flex;
+      gap: 16px;
+      &__item {
+        display: flex;
+        gap: 16px;
+        border-radius: 24px;
+        background: var(--colors-slate-100, #f1f5f9);
+        padding: 16px;
+        align-items: start;
+      }
+    }
+    .info-box {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .info {
+      color: var(--colors-slate-500, #64748b);
+    }
+  }
+}
+
+// smartphones section start
+.smartphones,
+.laptops {
+  padding-block: 56px;
+  .title-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  .title {
+    font-size: 32px;
+    font-weight: 500;
+  }
+  .all {
+    padding: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    border-radius: 12px;
+    background: var(--colors-slate-100, #f1f5f9);
+  }
+
+  .cards {
+    display: flex;
+    gap: 32px;
+    .card {
+      padding: 24px;
+    }
+    .main-box {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 232px;
+    }
+    .tags {
+      display: flex;
+      gap: 4px;
+      align-items: center;
+    }
+    .tag {
+      display: flex;
+      padding: 4px 8px;
+      border-radius: 900px;
+    }
+    .discount {
+      color: var(--colors-teal-600, #0d9488);
+      background: var(--colors-teal-50, #f0fdfa);
+    }
+    .gift {
+      color: #2563eb;
+      background: var(--colors-blue-50, #eff6ff);
+    }
+    .phone-box {
+      img {
+        max-width: 232px;
+        max-height: 262px;
+        opacity: 1;
+      }
+    }
+    .info {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 110%;
+    }
+    .price-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      font-size: 14px;
+      line-height: 110%;
+      font-weight: 500;
+    }
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .old {
+      color: var(--colors-slate-500, #64748b);
+      text-decoration: line-through;
+      font-weight: 400;
+    }
+    .stock {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 400;
+      color: var(--colors-slate-500, #64748b);
+    }
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      margin-top: 16px;
+    }
+    .basket {
+      padding: 14px;
+      display: flex;
+      align-items: center;
+      gap: 63px;
+      border-radius: 12px;
+      background: var(--colors-slate-900, #0f172a);
+      color: #fff;
+    }
+    .trash {
+      z-index: 1;
+    }
+    .heart {
+      background: var(--colors-slate-100, #f1f5f9);
+      padding: 12px;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.laptops {
+  padding: 0;
+}
+
+// gift section
+.gift {
+    margin-block: 56px;
+  .container {
+    display: flex;
+    gap: 32px;
+    .left {
+      background-image: url("../images/gift-bg.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 32px;
+      color: white;
+      border-radius: 32px;
+      display: flex;
+      justify-content: space-between;
+      gap: 63px;
+      align-items: end;
+    }
+    .all {
+      padding: 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      font-weight: 500;
+      border-radius: 12px;
+      background: white;
+    }
+    .kdd {
+      max-width: 337px;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 110%;
+    }
+  }
+}

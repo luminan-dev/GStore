@@ -1,0 +1,18 @@
+.wrapper {
+  overflow: hidden;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.nav__item {
+  position: relative;
+}
+.nav__link {
+  color: blue;
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
