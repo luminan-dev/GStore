@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gstore</title>
+    <meta property="og:title" content="GStore" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1526779259212-939e64788e3c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D" />
+    <meta property="og:description" content="GSore is a platform for buying and selling digital assets.You can find any type of product for cheap price." />
     <!-- Favicon -->
     <link rel="icon" href="images/log.png" type="image/svg+xml" />
     <!-- font: sfpro -->
     <link rel="stylesheet" href="fonts/SFPro/stylesheet.css">
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="online-libraries/swiper-bundle.css">
     <!-- CSS Fayllar -->
     <link rel="stylesheet" href="sass/css/normalize.css">
     <link rel="stylesheet" href="sass/style.css">
@@ -18,51 +21,41 @@
     <!-- wrapper -->
      <div class="wrapper">
         <header class="header">
-            <div class="top">
+            <div class="header-top">
                 <div class="container">
-                    <div class="left-box">
-                        <ul class="list">
-                            <li class="list__item">
-                                <a class="list__link" href="#!">
-                                    <img class="location" src="images/icons/Location.svg" alt="location">
-                                </a>
-                                <span class="desc">Москва</span>
-                            </li>
-                            <li class="list__item">
-                                <a class="list__link" href="#!">
-                                    <img class="bitcoin" src="images/icons/bitcoin.svg" alt="bitcoin">
-                                </a>
-                                <span class="desc">Мы принимаем оплату в криптовалюте</span>
-                            </li>
-                        </ul>
+                    <div class="header-top__links">
+                        <div class="header-top__link">
+                            <img class="location" src="images/icons/Location.svg" alt="location">
+                            <span class="desc">Москва</span>
+                        </div>
+                        <div class="header-top__link">
+                            <img class="bitcoin" src="images/icons/bitcoin.svg" alt="bitcoin">
+                            <span class="desc">Мы принимаем оплату в криптовалюте</span>
+                        </div>
                     </div>
-                    <div class="right-box">
-                        <ul class="list">
-                            <li class="list__item">
-                                <a class="list__link" href="#!">
-                                    <img class="usdt" src="images/icons/usdt.svg" alt="usdt">
-                                </a>
+                    <div class="header-top__links">
+                        <div class="header-top__link">
+                            <a class="header-top__link-item" href="#!">
+                                <img class="usdt" src="images/icons/usdt.svg" alt="usdt">
                                 <span class="desc">1 USDT = 91,87 ₽</span>
-                            </li>
-                            <li class="list__item">
-                                <a class="list__link" href="#!">
-                                    <img class="telegram" src="images/icons/telegram.svg" alt="telegram">
-                                </a>
+                            </a>
+                        </div>
+                        <div class="header-top__link">
+                            <a class="header-top__link-item" href="#!">
+                                <img class="telegram" src="images/icons/telegram.svg" alt="telegram">
                                 <span class="desc">Поддержка</span>
-                            </li>
-                        </ul>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="bottom">
+            <div class="header-bottom">
                 <div class="container">
-                    <div class="left-box">
-                        <div class="logo-box">
-                            <a href="#!">
-                                <img src="images/log.png" alt="company logo">
-                            </a>
-                        </div>
-                        <div class="search-menu">
+                    <div class="header-bottom__links">
+                        <a class="header-bottom__link logo" href="#!">
+                            <img src="images/log.png" alt="company logo">
+                        </a>
+                        <div class="header-bottom__link search-menu">
                             <div class="catalog">
                                 <span class="name">Каталог</span>
                                 <img src="images/icons/menu.svg" alt="menu">
@@ -75,36 +68,74 @@
                             </div>
                         </div>
                     </div>
-                    <div class="right-box">
-                        <ul class="list">
-                            <li class="list__item">
-                                <a class="list__link" href="#!">
-                                    <img src="images/icons/charge.svg" alt="charge">
+                        <ul class="header-bottom__list">
+                            <li class="header-bottom__item">
+                                <a class="header-bottom__link" href="#!">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9019 1.80976C13.0377 2.13839 13.0917 2.52506 13.0917 2.93342V8.18342H14.9167C15.5933 8.18342 16.3749 8.3901 16.694 9.0966C17.0131 9.80331 16.6507 10.525 16.204 11.0297C16.2037 11.03 16.2034 11.0304 16.2031 11.0307L9.89632 18.1956C9.62654 18.5019 9.33049 18.7564 9.01184 18.9136C8.69 19.0723 8.28673 19.1566 7.8812 19.0043C7.47525 18.8519 7.22709 18.5227 7.0898 18.1904C6.95401 17.8618 6.90001 17.4751 6.90001 17.0667V11.8168H5.07501C4.40318 11.8168 3.6239 11.6125 3.3044 10.9076C2.98566 10.2044 3.34285 9.48296 3.7836 8.97515L3.78703 8.97119L10.0954 1.80454C10.3652 1.49831 10.6612 1.24372 10.9799 1.08656C11.3017 0.92783 11.705 0.843605 12.1105 0.995852C12.5164 1.14825 12.7646 1.4775 12.9019 1.80976ZM11.2211 2.79586C11.221 2.79593 11.2212 2.79578 11.2211 2.79586L4.91481 9.96022C4.79621 10.0972 4.73576 10.2025 4.70703 10.271C4.77702 10.2937 4.89525 10.3168 5.07501 10.3168H7.65001C8.06423 10.3168 8.40001 10.6525 8.40001 11.0668V17.0667C8.40001 17.2674 8.41932 17.4122 8.44286 17.5109C8.52622 17.4522 8.63707 17.3558 8.77037 17.2045L15.0787 10.0379L15.0802 10.0361C15.1993 9.90175 15.2603 9.79792 15.2896 9.73031C15.2189 9.70701 15.099 9.68342 14.9167 9.68342H12.3417C11.9275 9.68342 11.5917 9.34763 11.5917 8.93342V2.93342C11.5917 2.7328 11.5724 2.58798 11.5488 2.4893C11.4655 2.54798 11.3544 2.64457 11.2211 2.79586ZM8.49613 17.658C8.49612 17.658 8.49586 17.6577 8.49538 17.6569L8.49613 17.658Z" fill="#0F172A"/>
+                                    </svg>
                                 </a>
                             </li>
-                            <li class="list__item">
-                                <a class="list__link" href="#!">
-                                    <img src="images/icons/charge.svg" alt="charge">
+                            <li class="header-bottom__item">
+                                <a class="header-bottom__link" href="#!">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.54721 3.07078C2.21983 1.86401 3.5159 1.04175 5.00146 1.04175H12.5015C12.8466 1.04175 13.1265 1.32157 13.1265 1.66675V10.0001C13.1265 11.2619 12.0966 12.2917 10.8348 12.2917H10.0015C9.65628 12.2917 9.37646 12.0119 9.37646 11.6667C9.37646 11.3216 9.65628 11.0417 10.0015 11.0417H10.8348C11.4063 11.0417 11.8765 10.5716 11.8765 10.0001V2.29175H5.00146C3.98701 2.29175 3.09976 2.8528 2.63906 3.67936C2.471 3.98086 2.09035 4.08905 1.78884 3.921C1.48734 3.75294 1.37915 3.37229 1.54721 3.07078Z" fill="#0F172A"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.8753 4.16675C11.8753 3.82157 12.1551 3.54175 12.5003 3.54175H14.0337C14.8619 3.54175 15.6151 3.99008 16.0242 4.69459L16.0262 4.69814L16.0262 4.69815L17.4512 7.1898C17.5618 7.38324 17.5611 7.62094 17.4493 7.81369C17.3375 8.00644 17.1315 8.12508 16.9086 8.12508H15.8337C15.7205 8.12508 15.6253 8.22026 15.6253 8.33342V10.8334C15.6253 10.9466 15.7205 11.0417 15.8337 11.0417H18.3337C18.6788 11.0417 18.9587 11.3216 18.9587 11.6667V14.1667C18.9587 15.8953 17.5622 17.2917 15.8337 17.2917H15.0003C14.6551 17.2917 14.3753 17.0119 14.3753 16.6667C14.3753 16.0953 13.9051 15.6251 13.3337 15.6251C12.7622 15.6251 12.292 16.0953 12.292 16.6667C12.292 17.0119 12.0122 17.2917 11.667 17.2917H8.33366C7.98848 17.2917 7.70866 17.0119 7.70866 16.6667C7.70866 16.0953 7.23848 15.6251 6.66699 15.6251C6.0955 15.6251 5.62532 16.0953 5.62532 16.6667C5.62532 17.0119 5.3455 17.2917 5.00032 17.2917H4.16699C2.43848 17.2917 1.04199 15.8953 1.04199 14.1667C1.04199 13.8216 1.32181 13.5417 1.66699 13.5417C2.01217 13.5417 2.29199 13.8216 2.29199 14.1667C2.29199 15.2049 3.12884 16.0417 4.16699 16.0417H4.46225C4.73555 15.0818 5.62165 14.3751 6.66699 14.3751C7.71233 14.3751 8.59843 15.0818 8.87173 16.0417H11.1289C11.4022 15.0818 12.2883 14.3751 13.3337 14.3751C14.379 14.3751 15.2651 15.0818 15.5384 16.0417H15.8337C16.8718 16.0417 17.7087 15.2049 17.7087 14.1667V12.2917H15.8337C15.0301 12.2917 14.3753 11.6369 14.3753 10.8334V8.33342C14.3753 7.53072 15.0288 6.87641 15.8312 6.87508L14.9432 5.32226C14.9429 5.32171 14.9425 5.32117 14.9422 5.32063C14.7511 4.99277 14.4049 4.79175 14.0337 4.79175H13.1253V10.0001C13.1253 11.2619 12.0955 12.2917 10.8337 12.2917H10.0003C9.65515 12.2917 9.37532 12.0119 9.37532 11.6667C9.37532 11.3216 9.65515 11.0417 10.0003 11.0417H10.8337C11.4051 11.0417 11.8753 10.5716 11.8753 10.0001V4.16675Z" fill="#0F172A"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.6674 15.6252C6.0921 15.6252 5.62573 16.0916 5.62573 16.6669C5.62573 17.2422 6.0921 17.7086 6.6674 17.7086C7.2427 17.7086 7.70907 17.2422 7.70907 16.6669C7.70907 16.0916 7.2427 15.6252 6.6674 15.6252ZM4.37573 16.6669C4.37573 15.4013 5.40175 14.3752 6.6674 14.3752C7.93305 14.3752 8.95907 15.4013 8.95907 16.6669C8.95907 17.9326 7.93305 18.9586 6.6674 18.9586C5.40175 18.9586 4.37573 17.9326 4.37573 16.6669Z" fill="#0F172A"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3337 15.6252C12.7584 15.6252 12.292 16.0916 12.292 16.6669C12.292 17.2422 12.7584 17.7086 13.3337 17.7086C13.909 17.7086 14.3753 17.2422 14.3753 16.6669C14.3753 16.0916 13.909 15.6252 13.3337 15.6252ZM11.042 16.6669C11.042 15.4013 12.068 14.3752 13.3337 14.3752C14.5993 14.3752 15.6253 15.4013 15.6253 16.6669C15.6253 17.9326 14.5993 18.9586 13.3337 18.9586C12.068 18.9586 11.042 17.9326 11.042 16.6669Z" fill="#0F172A"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8341 8.12524C15.7209 8.12524 15.6257 8.22042 15.6257 8.33358V10.8336C15.6257 10.9467 15.7209 11.0419 15.8341 11.0419H17.7091V10.1659L16.5459 8.12524H15.8341ZM14.3757 8.33358C14.3757 7.53007 15.0306 6.87524 15.8341 6.87524H16.909C17.1336 6.87524 17.3408 6.99568 17.452 7.19074L18.877 9.69074C18.9308 9.78504 18.9591 9.8917 18.9591 10.0002V11.6669C18.9591 12.0121 18.6792 12.2919 18.3341 12.2919H15.8341C15.0306 12.2919 14.3757 11.6371 14.3757 10.8336V8.33358Z" fill="#0F172A"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.04199 6.66675C1.04199 6.32157 1.32181 6.04175 1.66699 6.04175H6.66699C7.01217 6.04175 7.29199 6.32157 7.29199 6.66675C7.29199 7.01193 7.01217 7.29175 6.66699 7.29175H1.66699C1.32181 7.29175 1.04199 7.01193 1.04199 6.66675Z" fill="#0F172A"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.04199 9.16675C1.04199 8.82157 1.32181 8.54175 1.66699 8.54175H5.00033C5.3455 8.54175 5.62533 8.82157 5.62533 9.16675C5.62533 9.51193 5.3455 9.79175 5.00033 9.79175H1.66699C1.32181 9.79175 1.04199 9.51193 1.04199 9.16675Z" fill="#0F172A"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.04199 11.6667C1.04199 11.3216 1.32181 11.0417 1.66699 11.0417H3.33366C3.67884 11.0417 3.95866 11.3216 3.95866 11.6667C3.95866 12.0119 3.67884 12.2917 3.33366 12.2917H1.66699C1.32181 12.2917 1.04199 12.0119 1.04199 11.6667Z" fill="#0F172A"/>
+                                    </svg>
+                                </a>
+                                <div class="header-bottom__dropdown">
+                                    <span class="header-bottom__dropdown__title">Профиль</span>
+                                    <a class="dropdown__link" href="#!">Личные данные</a>
+                                    <a class="dropdown__link" href="#!">Баланс</a>
+                                    <a class="dropdown__link" href="#!">Заказы</a>
+                                    <a class="dropdown__link" href="#!">Отзывы</a>
+                                </div>
+                            </li>
+                            <li class="header-bottom__item">
+                                <a class="header-bottom__link" href="#!">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99984 2.4165C5.81168 2.4165 2.4165 5.81168 2.4165 9.99984C2.4165 14.188 5.81168 17.5832 9.99984 17.5832C14.188 17.5832 17.5832 14.188 17.5832 9.99984C17.5832 5.81168 14.188 2.4165 9.99984 2.4165ZM0.916504 9.99984C0.916504 4.98325 4.98325 0.916504 9.99984 0.916504C15.0164 0.916504 19.0832 4.98325 19.0832 9.99984C19.0832 15.0164 15.0164 19.0832 9.99984 19.0832C4.98325 19.0832 0.916504 15.0164 0.916504 9.99984Z" fill="#0F172A"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0306 6.96967C13.3235 7.26256 13.3235 7.73744 13.0306 8.03033L8.03057 13.0303C7.73768 13.3232 7.26281 13.3232 6.96991 13.0303C6.67702 12.7374 6.67702 12.2626 6.96991 11.9697L11.9699 6.96967C12.2628 6.67678 12.7377 6.67678 13.0306 6.96967Z" fill="#0F172A"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3291 12.083C11.3291 11.6688 11.6649 11.333 12.0791 11.333H12.0866C12.5008 11.333 12.8366 11.6688 12.8366 12.083C12.8366 12.4972 12.5008 12.833 12.0866 12.833H12.0791C11.6649 12.833 11.3291 12.4972 11.3291 12.083Z" fill="#0F172A"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.16162 7.9165C7.16162 7.50229 7.49741 7.1665 7.91162 7.1665H7.91911C8.33332 7.1665 8.66911 7.50229 8.66911 7.9165C8.66911 8.33072 8.33332 8.6665 7.91911 8.6665H7.91162C7.49741 8.6665 7.16162 8.33072 7.16162 7.9165Z" fill="#0F172A"/>
+                                    </svg>
                                 </a>
                             </li>
-                            <li class="list__item">
-                                <a class="list__link" href="#!">
-                                    <img src="images/icons/charge.svg" alt="charge">
+                            <li class="header-bottom__item line">
+                                <img src="images/icons/line.svg" alt="line">
+                            </li>
+                            <li class="header-bottom__item">
+                                <a class="header-bottom__link" href="#!">
+                                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.29959 2.33325C4.15897 2.33325 2.41626 4.07729 2.41626 6.24158C2.41626 8.90877 3.64694 11.0494 5.20508 12.6459C6.77225 14.2516 8.62454 15.2561 9.72523 15.6318L9.73256 15.6343L9.73254 15.6343C9.76897 15.6472 9.86571 15.6666 9.99959 15.6666C10.1335 15.6666 10.2302 15.6472 10.2666 15.6343L10.2739 15.6318L10.274 15.6318C11.3746 15.2561 13.2269 14.2516 14.7941 12.6459C16.3522 11.0494 17.5829 8.90877 17.5829 6.24158C17.5829 4.07729 15.8402 2.33325 13.6996 2.33325C12.4391 2.33325 11.3083 2.9457 10.6017 3.89708C10.4602 4.0876 10.2369 4.19992 9.99959 4.19992C9.76228 4.19992 9.53897 4.0876 9.39748 3.89708C8.69048 2.94508 7.56773 2.33325 6.29959 2.33325ZM0.91626 6.24158C0.91626 3.25588 3.32355 0.833252 6.29959 0.833252C7.73707 0.833252 9.03886 1.40014 9.99994 2.32061C10.9632 1.39983 12.2694 0.833252 13.6996 0.833252C16.6756 0.833252 19.0829 3.25588 19.0829 6.24158C19.0829 9.40774 17.6136 11.9046 15.8676 13.6936C14.132 15.4718 12.0779 16.6003 10.7617 17.0503C10.5159 17.1363 10.2394 17.1666 9.99959 17.1666C9.75981 17.1666 9.48329 17.1363 9.23742 17.0503C7.92131 16.6003 5.86719 15.4718 4.13161 13.6936C2.38558 11.9046 0.91626 9.40774 0.91626 6.24158Z" fill="#0F172A"/>
+                                    </svg>
                                 </a>
                             </li>
-                            <li class="list__item">
-                                <a class="list__link" href="#!">
-                                    <img src="images/icons/charge.svg" alt="charge">
+                            <li class="header-bottom__item">
+                                <a class="header-bottom__link" href="#!">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0019 2.41675C8.1149 2.41675 6.58521 3.94644 6.58521 5.83342C6.58521 7.72039 8.1149 9.25008 10.0019 9.25008C11.8888 9.25008 13.4185 7.72039 13.4185 5.83342C13.4185 3.94644 11.8888 2.41675 10.0019 2.41675ZM5.08521 5.83342C5.08521 3.11801 7.28647 0.916748 10.0019 0.916748C12.7173 0.916748 14.9185 3.11801 14.9185 5.83342C14.9185 8.54882 12.7173 10.7501 10.0019 10.7501C7.28647 10.7501 5.08521 8.54882 5.08521 5.83342Z" fill="#0F172A"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.09326 18.3333C2.09326 14.5575 5.78872 11.75 10.0016 11.75C14.2145 11.75 17.9099 14.5575 17.9099 18.3333C17.9099 18.7475 17.5741 19.0833 17.1599 19.0833C16.7457 19.0833 16.4099 18.7475 16.4099 18.3333C16.4099 15.6592 13.6887 13.25 10.0016 13.25C6.31447 13.25 3.59326 15.6592 3.59326 18.3333C3.59326 18.7475 3.25748 19.0833 2.84326 19.0833C2.42905 19.0833 2.09326 18.7475 2.09326 18.3333Z" fill="#0F172A"/>
+                                    </svg>
                                 </a>
                             </li>
-                            <li class="list__item">
+                            <li class="header-bottom__item">
                                 <a class="list__link" href="#!">
-                                    <img src="images/icons/charge.svg" alt="charge">
-                                </a>
-                            </li>
-                            <li class="list__item">
-                                <a class="list__link" href="#!">
-                                    <img src="images/icons/charge.svg" alt="charge">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.87122 1.13544C8.16451 1.42793 8.16517 1.90281 7.87268 2.1961L4.85601 5.2211C4.56352 5.5144 4.08865 5.51505 3.79535 5.22257C3.50206 4.93008 3.5014 4.4552 3.79389 4.16191L6.81056 1.13691C7.10305 0.843609 7.57792 0.842954 7.87122 1.13544Z" fill="#0F172A"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1279 1.13544C12.4212 0.842954 12.896 0.843609 13.1885 1.13691L16.2052 4.16191C16.4977 4.4552 16.497 4.93008 16.2037 5.22257C15.9104 5.51505 15.4356 5.5144 15.1431 5.2211L12.1264 2.1961C11.8339 1.90281 11.8346 1.42793 12.1279 1.13544Z" fill="#0F172A"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.62425 5.7531C2.58483 5.77951 2.41626 5.89369 2.41626 6.54142C2.41626 6.94169 2.46378 7.16644 2.51025 7.28603C2.54664 7.37967 2.57509 7.39371 2.58066 7.39645C2.58098 7.39661 2.58122 7.39673 2.58138 7.39682C2.60635 7.41121 2.67499 7.4388 2.84974 7.45164C2.98354 7.46148 3.12002 7.46045 3.29574 7.45914C3.36285 7.45864 3.43567 7.45809 3.51626 7.45809H16.4829C16.5635 7.45809 16.6363 7.45864 16.7034 7.45914C16.8792 7.46045 17.0156 7.46148 17.1494 7.45164C17.3242 7.4388 17.3928 7.41121 17.4178 7.39682C17.418 7.39673 17.4182 7.39661 17.4185 7.39645C17.4241 7.39371 17.4525 7.37968 17.4889 7.28603C17.5354 7.16644 17.5829 6.94169 17.5829 6.54142C17.5829 5.89369 17.4144 5.77951 17.3749 5.7531C17.2548 5.67266 17.0185 5.62476 16.4829 5.62476H3.51626C2.98073 5.62476 2.74436 5.67266 2.62425 5.7531ZM1.78952 4.50682C2.33816 4.13935 3.02679 4.12476 3.51626 4.12476H16.4829C16.9724 4.12476 17.661 4.13935 18.2097 4.50682C18.839 4.92834 19.0829 5.64748 19.0829 6.54142C19.0829 7.50557 18.866 8.29346 18.1668 8.69644C17.8574 8.87476 17.5276 8.9279 17.2594 8.94761C17.0593 8.96231 16.8356 8.96052 16.6422 8.95897C16.5861 8.95852 16.5326 8.95809 16.4829 8.95809H3.51626C3.46659 8.95809 3.41305 8.95852 3.35695 8.95897C3.16357 8.96052 2.93985 8.96231 2.73981 8.94761C2.47159 8.9279 2.1418 8.87476 1.83238 8.69644C1.13316 8.29346 0.91626 7.50557 0.91626 6.54142C0.91626 5.64748 1.16019 4.92834 1.78952 4.50682Z" fill="#0F172A"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.13232 10.9165C8.54654 10.9165 8.88232 11.2523 8.88232 11.6665V14.6248C8.88232 15.0391 8.54654 15.3748 8.13232 15.3748C7.71811 15.3748 7.38232 15.0391 7.38232 14.6248V11.6665C7.38232 11.2523 7.71811 10.9165 8.13232 10.9165Z" fill="#0F172A"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9666 10.9165C12.3808 10.9165 12.7166 11.2523 12.7166 11.6665V14.6248C12.7166 15.0391 12.3808 15.3748 11.9666 15.3748C11.5523 15.3748 11.2166 15.0391 11.2166 14.6248V11.6665C11.2166 11.2523 11.5523 10.9165 11.9666 10.9165Z" fill="#0F172A"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.2243 7.59657C17.6311 7.67459 17.8976 8.06761 17.8196 8.47441L16.4197 15.7742C16.4196 15.7743 16.4197 15.7741 16.4197 15.7742C16.2728 16.5411 16.0758 17.43 15.4475 18.0884C14.787 18.7805 13.7979 19.0831 12.408 19.0831H7.38304C6.06955 19.0831 5.08944 18.7547 4.40979 18.0664C3.75128 17.3995 3.49203 16.5079 3.35137 15.6552L2.17617 8.45394C2.10945 8.04514 2.38677 7.65965 2.79558 7.59294C3.20438 7.52622 3.58987 7.80354 3.65658 8.21235L4.83137 15.4111C4.83134 15.4109 4.83141 15.4113 4.83137 15.4111C4.95739 16.1747 5.15238 16.6836 5.47713 17.0124C5.78081 17.32 6.3132 17.5831 7.38304 17.5831H12.408C13.6098 17.5831 14.1083 17.3191 14.3623 17.0528C14.6485 16.753 14.7933 16.2918 14.9464 15.4921L16.3465 8.19188C16.4245 7.78508 16.8175 7.51855 17.2243 7.59657Z" fill="#0F172A"/>
+                                    </svg>
+
                                 </a>
                             </li>
                         </ul>
@@ -112,48 +143,46 @@
                 </div>
             </div>
         </header>
-        <div class="nav-section">
+        <div class="categories">
             <div class="container">
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a class="nav__link" href="#!">
-                                <img class="nav__phone" src="images/icons/smartphones.svg" alt="phone">
-                                Смартфоны
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="#!">
-                                <img class="nav__laptop" src="images/icons/laptops.svg" alt="laptops">
-                                Ноутбуки
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="#!">
-                                <img class="nav__tablet" src="images/icons/tablets.svg" alt="tablets">
-                                Планшеты
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="#!">
-                                <img class="nav__styler" src="images/icons/stylers.svg" alt="styler">
-                                Стайлеры
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="#!">
-                                <img class="nav__console" src="images/icons/consoles.svg" alt="consoles">
-                                Приставки
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="#!">
-                                <img class="nav__acsessory" src="images/icons/acsessories.svg" alt="acsessory">
-                                Акссесуары
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+                <ul class="categories__list">
+                    <li class="categories__item">
+                        <a class="categories__link" href="#!">
+                            <img class="nav__phone" src="images/icons/smartphones.svg" alt="phone">
+                            Смартфоны
+                        </a>
+                    </li>
+                    <li class="categories__item">
+                        <a class="categories__link" href="#!">
+                            <img class="nav__laptop" src="images/icons/laptops.svg" alt="laptops">
+                               Ноутбуки
+                        </a>
+                    </li>
+                    <li class="categories__item">
+                        <a class="categories__link" href="#!">
+                            <img class="nav__tablet" src="images/icons/tablets.svg" alt="tablets">
+                            Планшеты
+                        </a>
+                    </li>
+                    <li class="categories__item">
+                        <a class="categories__link" href="#!">
+                            <img class="nav__styler" src="images/icons/stylers.svg" alt="styler">
+                            Стайлеры
+                        </a>
+                    </li>
+                    <li class="categories__item">
+                        <a class="categories__link" href="#!">
+                            <img class="nav__console" src="images/icons/consoles.svg" alt="consoles">
+                            Приставки
+                        </a>
+                    </li>
+                    <li class="categories__item">
+                        <a class="categories__link" href="#!">
+                            <img class="nav__acsessory" src="images/icons/acsessories.svg" alt="acsessory">
+                             Акссесуары
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
 
@@ -274,7 +303,7 @@
                                             <div class="cart">
                                                 <img class="iphone" src="images/iphone.png" alt="iphone">
                                                 <div class="cart-content">
-                                                    <h3 class="name">iPhone 15 Pro 256GB Natural Titanium</h3>
+                                                    <h2 class="name">iPhone 15 Pro 256GB Natural Titanium</h2>
                                                     <div class="sale">
                                                         <span class="pieces">Осталось</span>
                                                         <span class="amount">8 шт.</span>
@@ -305,7 +334,7 @@
                                             <div class="cart">
                                                 <img class="iphone" src="images/iphone.png" alt="iphone">
                                                 <div class="cart-content">
-                                                    <h3 class="name">iPhone 15 Pro 256GB Natural Titanium</h3>
+                                                    <h2 class="name">iPhone 15 Pro 256GB Natural Titanium</h2>
                                                     <div class="sale">
                                                         <span class="pieces">Осталось</span>
                                                         <span class="amount">8 шт.</span>
@@ -336,7 +365,7 @@
                                             <div class="cart">
                                                 <img class="iphone" src="images/iphone.png" alt="iphone">
                                                 <div class="cart-content">
-                                                    <h3 class="name">iPhone 15 Pro 256GB Natural Titanium</h3>
+                                                    <h2 class="name">iPhone 15 Pro 256GB Natural Titanium</h2>
                                                     <div class="sale">
                                                         <span class="pieces">Осталось</span>
                                                         <span class="amount">8 шт.</span>
@@ -367,7 +396,7 @@
                                             <div class="cart">
                                                 <img class="iphone" src="images/iphone.png" alt="iphone">
                                                 <div class="cart-content">
-                                                    <h3 class="name">iPhone 15 Pro 256GB Natural Titanium</h3>
+                                                    <h2 class="name">iPhone 15 Pro 256GB Natural Titanium</h2>
                                                     <div class="sale">
                                                         <span class="pieces">Осталось</span>
                                                         <span class="amount">8 шт.</span>
@@ -398,7 +427,7 @@
                                             <div class="cart">
                                                 <img class="iphone" src="images/iphone.png" alt="iphone">
                                                 <div class="cart-content">
-                                                    <h3 class="name">iPhone 15 Pro 256GB Natural Titanium</h3>
+                                                    <h2 class="name">iPhone 15 Pro 256GB Natural Titanium</h2>
                                                     <div class="sale">
                                                         <span class="pieces">Осталось</span>
                                                         <span class="amount">8 шт.</span>
@@ -418,48 +447,44 @@
                     </div>
                 </div>
 
+                <!-- Swiper konteyneri -->
                 <div class="bottom">
                     <div class="container">
-                        <ul class="list">
-                            <li class="list__item">
-                                <img src="images/icons/dark-delivery.svg" alt="dark-delivery">
-                                <div class="info-box">
-                                    <span class="desc">
-                                        Молниеносная доставка
-                                    </span>
-                                    <span class="info"> Vse наши товары доставляют компанией СДЭК</span>
-                                </div>
-                            </li>
-                            <li class="list__item">
-                                <img src="images/icons/dark-delivery.svg" alt="dark-delivery">
-                                <div class="info-box">
-                                    <span class="desc">
-                                        Молниеносная доставка
-                                    </span>
-                                    <span class="info"> Vse наши товары доставляют компанией СДЭК</span>
-                                </div>
-                            </li>
-                            <li class="list__item">
-                                <img src="images/icons/dark-delivery.svg" alt="dark-delivery">
-                                <div class="info-box">
-                                    <span class="desc">
-                                        Молниеносная доставка
-                                    </span>
-                                    <span class="info"> Vse наши товары доставляют компанией СДЭК</span>
-                                </div>
-                            </li>
-                            <li class="list__item">
-                                <img src="images/icons/dark-delivery.svg" alt="dark-delivery">
-                                <div class="info-box">
-                                    <span class="desc">
-                                        Молниеносная доставка
-                                    </span>
-                                    <span class="info"> Vse наши товары доставляют компанией СДЭК</span>
-                                </div>
-                            </li>
-                        </ul>
+                    <div class="swiper intro-bottom-swiper">
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/icons/dark-delivery.svg" alt="dark-delivery">
+                            <div class="info-box">
+                            <span class="desc">Молниеносная доставка</span>
+                            <span class="info">Vse наши товары доставляют компанией СДЭК</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/icons/dark-delivery.svg" alt="dark-delivery">
+                            <div class="info-box">
+                             <span class="desc">Молниеносная доставка</span>
+                             <span class="info">Vse наши товары доставляют компанией СДЭК</span>
+                            </div>
+                         </div>
+                        <div class="swiper-slide">
+                            <img src="images/icons/dark-delivery.svg" alt="dark-delivery">
+                            <div class="info-box">
+                            <span class="desc">Молниеносная доставка</span>
+                            <span class="info">Vse наши товары доставляют компанией СДЭК</span>
+                            </div>
+                         </div>
+                        <div class="swiper-slide">
+                             <img src="images/icons/dark-delivery.svg" alt="dark-delivery">
+                             <div class="info-box">
+                            <span class="desc">Молниеносная доставка</span>
+                            <span class="info">Vse наши товары доставляют компанией СДЭК</span>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
+
             </section>
             <!-- intro end -->
 
@@ -480,10 +505,12 @@
                                     <div class="tag discount">Скидка 20%</div>
                                     <div class="tag gift">Подарок за отзыв</div>
                                 </div>
-                                <div class="phone-box">
+                                <div class="card-img">
                                     <img src="images/ip15.png" alt="iphone">
                                 </div>
                                 <div class="info">iPhone 15 Pro 256GB Natural Titanium</div>
+                            </div>
+                            <div class="buttons">
                                 <div class="price-box">
                                     <div class="left">
                                         <img src="images/icons/usdt.svg" alt="usdt">
@@ -498,14 +525,14 @@
                                     <div class="left">Наличие</div>
                                     <div class="right">8 шт.</div>
                                 </div>
-                            </div>
-                            <div class="buttons">
-                                <div class="basket">
-                                    <span class="to">V корзину</span>
-                                    <img class="trash" src="images/icons/trash.svg" alt="">
-                                </div>
-                                <div class="heart">
-                                    <img src="images/icons/heart.svg" alt="">
+                                <div class="button-box">
+                                    <button class="basket">
+                                        <span class="to">V корзину</span>
+                                        <img class="trash" src="images/icons/trash.svg" alt="">
+                                    </button>
+                                    <button class="heart">
+                                         <img src="images/icons/heart.svg" alt="">
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -515,10 +542,12 @@
                                     <div class="tag discount">Скидка 20%</div>
                                     <div class="tag gift">Подарок за отзыв</div>
                                 </div>
-                                <div class="phone-box">
+                                <div class="card-img">
                                     <img src="images/ip15.png" alt="iphone">
                                 </div>
                                 <div class="info">iPhone 15 Pro 256GB Natural Titanium</div>
+                            </div>
+                            <div class="buttons">
                                 <div class="price-box">
                                     <div class="left">
                                         <img src="images/icons/usdt.svg" alt="usdt">
@@ -533,14 +562,14 @@
                                     <div class="left">Наличие</div>
                                     <div class="right">8 шт.</div>
                                 </div>
-                            </div>
-                            <div class="buttons">
-                                <div class="basket">
-                                    <span class="to">V корзину</span>
-                                    <img class="trash" src="images/icons/trash.svg" alt="">
-                                </div>
-                                <div class="heart">
-                                    <img src="images/icons/heart.svg" alt="">
+                                <div class="button-box">
+                                    <dibutton class="basket">
+                                        <span class="to">V корзину</span>
+                                        <img class="trash" src="images/icons/trash.svg" alt="">
+                                    </dibutton>
+                                    <button class="heart">
+                                         <img src="images/icons/heart.svg" alt="">
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -550,10 +579,12 @@
                                     <div class="tag discount">Скидка 20%</div>
                                     <div class="tag gift">Подарок за отзыв</div>
                                 </div>
-                                <div class="phone-box">
+                                <div class="card-img">
                                     <img src="images/ip15.png" alt="iphone">
                                 </div>
                                 <div class="info">iPhone 15 Pro 256GB Natural Titanium</div>
+                            </div>
+                            <div class="buttons">
                                 <div class="price-box">
                                     <div class="left">
                                         <img src="images/icons/usdt.svg" alt="usdt">
@@ -568,14 +599,14 @@
                                     <div class="left">Наличие</div>
                                     <div class="right">8 шт.</div>
                                 </div>
-                            </div>
-                            <div class="buttons">
-                                <div class="basket">
-                                    <span class="to">V корзину</span>
-                                    <img class="trash" src="images/icons/trash.svg" alt="">
-                                </div>
-                                <div class="heart">
-                                    <img src="images/icons/heart.svg" alt="">
+                                <div class="button-box">
+                                    <button class="basket">
+                                        <span class="to">V корзину</span>
+                                        <img class="trash" src="images/icons/trash.svg" alt="">
+                                    </button>
+                                    <button class="heart">
+                                         <img src="images/icons/heart.svg" alt="">
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -585,10 +616,12 @@
                                     <div class="tag discount">Скидка 20%</div>
                                     <div class="tag gift">Подарок за отзыв</div>
                                 </div>
-                                <div class="phone-box">
+                                <div class="card-img">
                                     <img src="images/ip15.png" alt="iphone">
                                 </div>
                                 <div class="info">iPhone 15 Pro 256GB Natural Titanium</div>
+                            </div>
+                            <div class="buttons">
                                 <div class="price-box">
                                     <div class="left">
                                         <img src="images/icons/usdt.svg" alt="usdt">
@@ -603,14 +636,14 @@
                                     <div class="left">Наличие</div>
                                     <div class="right">8 шт.</div>
                                 </div>
-                            </div>
-                            <div class="buttons">
-                                <div class="basket">
-                                    <span class="to">V корзину</span>
-                                    <img class="trash" src="images/icons/trash.svg" alt="">
-                                </div>
-                                <div class="heart">
-                                    <img src="images/icons/heart.svg" alt="">
+                                <div class="button-box">
+                                    <button class="basket">
+                                        <span class="to">V корзину</span>
+                                        <img class="trash" src="images/icons/trash.svg" alt="">
+                                    </button>
+                                    <button class="heart">
+                                         <img src="images/icons/heart.svg" alt="">
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -635,14 +668,16 @@
                                     <div class="tag discount">Скидка 20%</div>
                                     <div class="tag gift">Подарок за отзыв</div>
                                 </div>
-                                <div class="phone-box">
+                                <div class="card-img">
                                     <img src="images/laptop.png" alt="iphone">
                                 </div>
                                 <div class="info">iPhone 15 Pro 256GB Natural Titanium</div>
+                            </div>
+                            <div class="buttons">
                                 <div class="price-box">
                                     <div class="left">
                                         <img src="images/icons/usdt.svg" alt="usdt">
-                                        560 USDT
+                                        560 USDT
                                     </div>
                                     <div class="right">
                                         <span class="new">145 900 ₽</span>
@@ -653,14 +688,14 @@
                                     <div class="left">Наличие</div>
                                     <div class="right">8 шт.</div>
                                 </div>
-                            </div>
-                            <div class="buttons">
-                                <div class="basket">
-                                    <span class="to">V корзину</span>
-                                    <img class="trash" src="images/icons/trash.svg" alt="">
-                                </div>
-                                <div class="heart">
-                                    <img src="images/icons/heart.svg" alt="">
+                                <div class="button-box">
+                                    <button class="basket">
+                                        <span class="to">V корзину</span>
+                                         <img class="trash" src="images/icons/trash.svg" alt="">
+                                    </button>
+                                    <button class="heart">
+                                         <img src="images/icons/heart.svg" alt="">
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -670,14 +705,16 @@
                                     <div class="tag discount">Скидка 20%</div>
                                     <div class="tag gift">Подарок за отзыв</div>
                                 </div>
-                                <div class="phone-box">
+                                <div class="card-img">
                                     <img src="images/laptop.png" alt="iphone">
                                 </div>
                                 <div class="info">iPhone 15 Pro 256GB Natural Titanium</div>
+                            </div>
+                            <div class="buttons">
                                 <div class="price-box">
                                     <div class="left">
                                         <img src="images/icons/usdt.svg" alt="usdt">
-                                        560 USDT
+                                        560 USDT
                                     </div>
                                     <div class="right">
                                         <span class="new">145 900 ₽</span>
@@ -688,14 +725,14 @@
                                     <div class="left">Наличие</div>
                                     <div class="right">8 шт.</div>
                                 </div>
-                            </div>
-                            <div class="buttons">
-                                <div class="basket">
-                                    <span class="to">V корзину</span>
-                                    <img class="trash" src="images/icons/trash.svg" alt="">
-                                </div>
-                                <div class="heart">
-                                    <img src="images/icons/heart.svg" alt="">
+                                <div class="button-box">
+                                    <button class="basket">
+                                        <span class="to">V корзину</span>
+                                         <img class="trash" src="images/icons/trash.svg" alt="">
+                                    </button>
+                                    <button class="heart">
+                                         <img src="images/icons/heart.svg" alt="">
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -705,14 +742,16 @@
                                     <div class="tag discount">Скидка 20%</div>
                                     <div class="tag gift">Подарок за отзыв</div>
                                 </div>
-                                <div class="phone-box">
+                                <div class="card-img">
                                     <img src="images/laptop.png" alt="iphone">
                                 </div>
                                 <div class="info">iPhone 15 Pro 256GB Natural Titanium</div>
+                            </div>
+                            <div class="buttons">
                                 <div class="price-box">
                                     <div class="left">
                                         <img src="images/icons/usdt.svg" alt="usdt">
-                                       560 USDT
+                                        560 USDT
                                     </div>
                                     <div class="right">
                                         <span class="new">145 900 ₽</span>
@@ -723,14 +762,14 @@
                                     <div class="left">Наличие</div>
                                     <div class="right">8 шт.</div>
                                 </div>
-                            </div>
-                            <div class="buttons">
-                                <div class="basket">
-                                    <span class="to">V корзину</span>
-                                    <img class="trash" src="images/icons/trash.svg" alt="">
-                                </div>
-                                <div class="heart">
-                                    <img src="images/icons/heart.svg" alt="">
+                                <div class="button-box">
+                                    <button class="basket">
+                                        <span class="to">V корзину</span>
+                                         <img class="trash" src="images/icons/trash.svg" alt="">
+                                    </button>
+                                    <button class="heart">
+                                         <img src="images/icons/heart.svg" alt="">
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -740,14 +779,16 @@
                                     <div class="tag discount">Скидка 20%</div>
                                     <div class="tag gift">Подарок за отзыв</div>
                                 </div>
-                                <div class="phone-box">
+                                <div class="card-img">
                                     <img src="images/laptop.png" alt="iphone">
                                 </div>
                                 <div class="info">iPhone 15 Pro 256GB Natural Titanium</div>
+                            </div>
+                            <div class="buttons">
                                 <div class="price-box">
                                     <div class="left">
                                         <img src="images/icons/usdt.svg" alt="usdt">
-                                        560 USDT
+                                        560 USDT
                                     </div>
                                     <div class="right">
                                         <span class="new">145 900 ₽</span>
@@ -758,14 +799,14 @@
                                     <div class="left">Наличие</div>
                                     <div class="right">8 шт.</div>
                                 </div>
-                            </div>
-                            <div class="buttons">
-                                <div class="basket">
-                                    <span class="to">V корзину</span>
-                                    <img class="trash" src="images/icons/trash.svg" alt="">
-                                </div>
-                                <div class="heart">
-                                    <img src="images/icons/heart.svg" alt="">
+                                <div class="button-box">
+                                    <button class="basket">
+                                        <span class="to">V корзину</span>
+                                         <img class="trash" src="images/icons/trash.svg" alt="">
+                                    </button>
+                                    <button class="heart">
+                                         <img src="images/icons/heart.svg" alt="">
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -774,17 +815,17 @@
              </section>
 
              <!-- gift section start -->
-              <section class="gift">
+              <section class="gift-prize">
                 <div class="container">
                     <div class="left">
-                        <span class="kdd">Оставьте видео отзыв на товар и получите подарок!</span>
+                        <h3 class="title">Оставьте видео отзыв на товар и получите подарок!</h3>
                          <button class="all">
                             Подробнее
                             <img src="images/icons/arrow-next.svg" alt="arrow-next">
                         </button>
                     </div>
                     <div class="left">
-                        <span class="kdd">Оставьте видео отзыв на товар и получите подарок!</span>
+                        <h3 class="title">Оставьте видео отзыв на товар и получите подарок!</h3>
                          <button class="all">
                             Подробнее
                             <img src="images/icons/arrow-next.svg" alt="arrow-next">
@@ -797,7 +838,7 @@
                <section class="laptops">
                  <div class="container">
                     <div class="title-box">
-                        <h2 class="title">Все товары</h2>
+                        <h2 class="title">Ноутбуки</h2>
                         <button class="all">
                             Vse товары
                             <img src="images/icons/arrow-next.svg" alt="arrow-next">
@@ -810,14 +851,16 @@
                                     <div class="tag discount">Скидка 20%</div>
                                     <div class="tag gift">Подарок за отзыв</div>
                                 </div>
-                                <div class="phone-box">
+                                <div class="card-img">
                                     <img src="images/laptop.png" alt="iphone">
                                 </div>
                                 <div class="info">iPhone 15 Pro 256GB Natural Titanium</div>
+                            </div>
+                            <div class="buttons">
                                 <div class="price-box">
                                     <div class="left">
                                         <img src="images/icons/usdt.svg" alt="usdt">
-                                        560 USDT
+                                        560 USDT
                                     </div>
                                     <div class="right">
                                         <span class="new">145 900 ₽</span>
@@ -828,14 +871,14 @@
                                     <div class="left">Наличие</div>
                                     <div class="right">8 шт.</div>
                                 </div>
-                            </div>
-                            <div class="buttons">
-                                <div class="basket">
-                                    <span class="to">V корзину</span>
-                                    <img class="trash" src="images/icons/trash.svg" alt="">
-                                </div>
-                                <div class="heart">
-                                    <img src="images/icons/heart.svg" alt="">
+                                <div class="button-box">
+                                    <button class="basket">
+                                        <span class="to">V корзину</span>
+                                         <img class="trash" src="images/icons/trash.svg" alt="">
+                                    </button>
+                                    <button class="heart">
+                                         <img src="images/icons/heart.svg" alt="">
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -845,14 +888,16 @@
                                     <div class="tag discount">Скидка 20%</div>
                                     <div class="tag gift">Подарок за отзыв</div>
                                 </div>
-                                <div class="phone-box">
+                                <div class="card-img">
                                     <img src="images/laptop.png" alt="iphone">
                                 </div>
                                 <div class="info">iPhone 15 Pro 256GB Natural Titanium</div>
+                            </div>
+                            <div class="buttons">
                                 <div class="price-box">
                                     <div class="left">
                                         <img src="images/icons/usdt.svg" alt="usdt">
-                                        560 USDT
+                                        560 USDT
                                     </div>
                                     <div class="right">
                                         <span class="new">145 900 ₽</span>
@@ -863,14 +908,14 @@
                                     <div class="left">Наличие</div>
                                     <div class="right">8 шт.</div>
                                 </div>
-                            </div>
-                            <div class="buttons">
-                                <div class="basket">
-                                    <span class="to">V корзину</span>
-                                    <img class="trash" src="images/icons/trash.svg" alt="">
-                                </div>
-                                <div class="heart">
-                                    <img src="images/icons/heart.svg" alt="">
+                                <div class="button-box">
+                                    <button class="basket">
+                                        <span class="to">V корзину</span>
+                                         <img class="trash" src="images/icons/trash.svg" alt="">
+                                    </button>
+                                    <button class="heart">
+                                         <img src="images/icons/heart.svg" alt="">
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -880,14 +925,16 @@
                                     <div class="tag discount">Скидка 20%</div>
                                     <div class="tag gift">Подарок за отзыв</div>
                                 </div>
-                                <div class="phone-box">
+                                <div class="card-img">
                                     <img src="images/laptop.png" alt="iphone">
                                 </div>
                                 <div class="info">iPhone 15 Pro 256GB Natural Titanium</div>
+                            </div>
+                            <div class="buttons">
                                 <div class="price-box">
                                     <div class="left">
                                         <img src="images/icons/usdt.svg" alt="usdt">
-                                       560 USDT
+                                        560 USDT
                                     </div>
                                     <div class="right">
                                         <span class="new">145 900 ₽</span>
@@ -898,14 +945,14 @@
                                     <div class="left">Наличие</div>
                                     <div class="right">8 шт.</div>
                                 </div>
-                            </div>
-                            <div class="buttons">
-                                <div class="basket">
-                                    <span class="to">V корзину</span>
-                                    <img class="trash" src="images/icons/trash.svg" alt="">
-                                </div>
-                                <div class="heart">
-                                    <img src="images/icons/heart.svg" alt="">
+                                <div class="button-box">
+                                    <button class="basket">
+                                        <span class="to">V корзину</span>
+                                         <img class="trash" src="images/icons/trash.svg" alt="">
+                                    </button>
+                                    <button class="heart">
+                                         <img src="images/icons/heart.svg" alt="">
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -915,14 +962,16 @@
                                     <div class="tag discount">Скидка 20%</div>
                                     <div class="tag gift">Подарок за отзыв</div>
                                 </div>
-                                <div class="phone-box">
+                                <div class="card-img">
                                     <img src="images/laptop.png" alt="iphone">
                                 </div>
                                 <div class="info">iPhone 15 Pro 256GB Natural Titanium</div>
+                            </div>
+                            <div class="buttons">
                                 <div class="price-box">
                                     <div class="left">
                                         <img src="images/icons/usdt.svg" alt="usdt">
-                                        560 USDT
+                                        560 USDT
                                     </div>
                                     <div class="right">
                                         <span class="new">145 900 ₽</span>
@@ -933,29 +982,235 @@
                                     <div class="left">Наличие</div>
                                     <div class="right">8 шт.</div>
                                 </div>
-                            </div>
-                            <div class="buttons">
-                                <div class="basket">
-                                    <span class="to">V корзину</span>
-                                    <img class="trash" src="images/icons/trash.svg" alt="">
-                                </div>
-                                <div class="heart">
-                                    <img src="images/icons/heart.svg" alt="">
+                                <div class="button-box">
+                                    <button class="basket">
+                                        <span class="to">V корзину</span>
+                                         <img class="trash" src="images/icons/trash.svg" alt="">
+                                    </button>
+                                    <button class="heart">
+                                         <img src="images/icons/heart.svg" alt="">
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                  </div>
              </section>
+
+             <section class="login">
+                <div class="login__box">
+                    <h4 class="title">Получите максимум выгоды</h4>
+                    <p class="desc">Оставьте почту, чтобы узнавать о сезонных акицях, скидках и бонусах</p>
+                    <div class="login-box">
+                        <input class="email" type="email" placeholder="Почта">
+                        <button class="send">Отправить</button>
+                    </div>
+                    <p class="info">Нажимая «Отправить» вы соглашаетесь с условиями использования сайта и Политикой обработки     персональных данных.</p>
+                    </div>
+             </section>
+
+             <section class="reviews">
+                <div class="container">
+                    <div class="title-box">
+                        <h2 class="title">Последние отзывы</h2>
+                        <div class="all">
+                            <button class="comment">
+                                Оставить отзыв
+                                <img src="images/icons/comment.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="content-box">
+                        <div class="card">
+                            <div class="user">
+                                <span class="account">AK</span>
+                                <span class="name-box">
+                                    <p class="name">Антон К.</p>
+                                    <button class="status">Подтверждённый отзыв</button>
+                                </span>
+                            </div>
+                            <div class="comment-section">
+                                <div class="good">
+                                    <h5 class="title">Достоинства</h5>
+                                    <p class="info">Новый, не вскрытый, полностью рабочий. Проверил все на сайте. Идёт в комплекте оригинальный блок для зарядки, матовая защитная плёнка, и чехол прозрачный</p>
+                                </div>
+                                <div class="bad">
+                                    <h5 class="title">Недостатки</h5>
+                                    <p class="info">Не обнаружено</p>
+                                </div>
+                                <div class="product">
+                                    <h5 class="title">Товар</h5>
+                                    <p class="info">iPhone 15PRO 512GB</p>
+                                </div>
+                            </div>
+                            <div class="review">
+                                <img src="images/icons/comment-img.svg" alt="">
+                                <img src="images/icons/comment-img.svg" alt="">
+                                <img src="images/icons/comment-img.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="user">
+                                <span class="account">AK</span>
+                                <span class="name-box">
+                                    <p class="name">Антон К.</p>
+                                    <button class="status">Подтверждённый отзыв</button>
+                                </span>
+                            </div>
+                            <div class="comment-section">
+                                <div class="good">
+                                    <h5 class="title">Достоинства</h5>
+                                    <p class="info">Новый, не вскрытый, полностью рабочий. Проверил все на сайте. Идёт в комплекте оригинальный блок для зарядки, матовая защитная плёнка, и чехол прозрачный</p>
+                                </div>
+                                <div class="bad">
+                                    <h5 class="title">Недостатки</h5>
+                                    <p class="info">Не обнаружено</p>
+                                </div>
+                                <div class="product">
+                                    <h5 class="title">Товар</h5>
+                                    <p class="info">iPhone 15PRO 512GB</p>
+                                </div>
+                            </div>
+                            <div class="review">
+                                <img src="images/icons/comment-img.svg" alt="">
+                                <img src="images/icons/comment-img.svg" alt="">
+                                <img src="images/icons/comment-img.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="user">
+                                <span class="account">AK</span>
+                                <span class="name-box">
+                                    <p class="name">Антон К.</p>
+                                    <button class="status">Подтверждённый отзыв</button>
+                                </span>
+                            </div>
+                            <div class="comment-section">
+                                <div class="good">
+                                    <h5 class="title">Достоинства</h5>
+                                    <p class="info">Новый, не вскрытый, полностью рабочий. Проверил все на сайте. Идёт в комплекте оригинальный блок для зарядки, матовая защитная плёнка, и чехол прозрачный</p>
+                                </div>
+                                <div class="bad">
+                                    <h5 class="title">Недостатки</h5>
+                                    <p class="info">Не обнаружено</p>
+                                </div>
+                                <div class="product">
+                                    <h5 class="title">Товар</h5>
+                                    <p class="info">iPhone 15PRO 512GB</p>
+                                </div>
+                            </div>
+                            <div class="review">
+                                <img src="images/icons/comment-img.svg" alt="">
+                                <img src="images/icons/comment-img.svg" alt="">
+                                <img src="images/icons/comment-img.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </section>
         </main>
         
-        <footer>
-            
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-container">
+                <div class="footer__left">
+                    <a class="footer__left-link" href="#!">
+                        <img src="images/footer-logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="actions">
+                <div class="line">
+                    <div class="title">
+                        <h6>GStore</h6>
+                        <ul class="line__list">
+                            <li class="line__item">
+                                <a href="#!" class="line__link">О компании</a>
+                            </li>
+                            <li class="line__item">
+                                <a href="#!" class="line__link">Контакты</a>
+                            </li>
+                            <li class="line__item">
+                                <a href="#!" class="line__link">Оплата и доставка</a>
+                            </li>
+                            <li class="line__item">
+                                <a href="#!" class="line__link">Медиа</a>
+                            </li>
+                            <li class="line__item">
+                                <a href="#!" class="line__link">Акции</a>
+                            </li>
+                            <li class="line__item">
+                                <a href="#!" class="line__link">Отзывы</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="title">
+                        <h6>GStore</h6>
+                        <ul class="line__list">
+                            <li class="line__item">
+                                <a href="#!" class="line__link">О компании</a>
+                            </li>
+                            <li class="line__item">
+                                <a href="#!" class="line__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="title">
+                        <h6>GStore</h6>
+                        <ul class="line__list">
+                            <li class="line__item">
+                                <a href="#!" class="line__link">О компании</a>
+                            </li>
+                            <li class="line__item">
+                                <a href="#!" class="line__link">Контакты</a>
+                            </li>
+                            <li class="line__item">
+                                <a href="#!" class="line__link">Оплата и доставка</a>
+                            </li>
+                            <li class="line__item">
+                                <a href="#!" class="line__link">Медиа</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="title">
+                        <h6>GStore</h6>
+                        <ul class="line__list">
+                            <li class="line__item">
+                                <a href="#!" class="line__link">О компании</a>
+                            </li>
+                            <li class="line__item">
+                                <a href="#!" class="line__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="title">
+                        <h6>GStore</h6>
+                        <ul class="line__list">
+                            <li class="line__item">
+                                <a href="#!" class="line__link">О компании</a>
+                            </li>
+                            <li class="line__item">
+                                <a href="#!" class="line__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
         </footer>
      </div>
 
     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="online-libraries/swiper.js"></script>
     <!-- custom JS -->
      <script src="js/main.js"></script>
 </body>

@@ -3,3 +3,9 @@ var swiper = new Swiper(".intro-swiper", {
         el: ".swiper-pagination",
       },
     });
+    var swiper = new Swiper(".intro-bottom-swiper", {
+      slidesPerView: 4,
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
