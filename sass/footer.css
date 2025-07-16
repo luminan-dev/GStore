@@ -5,6 +5,19 @@
 .footer .container {
   display: flex;
   justify-content: space-between;
+  gap: 32px;
+}
+.footer__left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.footer__left-link {
+  width: 176px;
+  height: 56px;
+}
+.footer__lefet-link.text {
+  color: #64748B;
 }
 .footer .actions {
   display: flex;
@@ -34,6 +47,6 @@
   font-size: 16px;
 }
 .footer .line__link {
-  color: #64748B;
+  color: #64748b;
   font-size: 16px;
 }/*# sourceMappingURL=footer.css.map */

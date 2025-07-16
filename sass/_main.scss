@@ -177,7 +177,7 @@
       gap: 12px;
       background-color: #f1f5f9;
       border-radius: 24px;
-      width: fit-content;
+      width: 292px !important;
       padding: 16px;
     }
   }
@@ -207,15 +207,13 @@
 // smartphones section start
 .smartphones,
 .laptops {
-  padding-block: 56px;
-  .cards {
-    display: flex;
-    gap: 32px;
+  .swiper-slide {
     .card {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       padding: 24px;
+      min-width: 250px;
     }
     .main-box {
       display: flex;
@@ -313,6 +311,10 @@
       justify-content: center;
       align-items: center;
     }
+    .swiper-slide {
+      width: auto;
+    }
+    // Boshqa style'lar...
   }
 }
 
@@ -359,19 +361,30 @@
 
 // login section
 .login {
-  margin-inline: auto;
-  max-width: 1216px;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 32px;
-  background-image: url("../images/login-bg.png");
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  margin-block: 56px;
+  color: white;
   &__box {
-    width: fit-conten;
-    padding: 81px 361px;
+    max-width: 700px;
+  }
+  .login-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 81px;
+    background-size: cover;
+    background-image: url("../images/login-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 32px;
+  }
+  .container {
+    width: 100%;
+    max-width: 1216px;
+    padding: 0 15px;
+    margin-inline: auto;
   }
   .title {
     font-size: 32px;
@@ -417,6 +430,7 @@
 // reviews
 .reviews {
   margin-block: 56px;
+
   .comment {
     font-weight: 500;
     display: flex;
@@ -424,11 +438,20 @@
     align-items: center;
     gap: 8px;
   }
-  .content-box {
-    display: flex;
-    gap: 32px;
-    justify-content: space-between;
+
+  .reviews-swiper {
+    padding-bottom: 40px;
+
+    .swiper-wrapper {
+      display: flex;
+      gap: 32px; // Kartalar orasidagi bo‘shliq
+    }
+
+    .swiper-slide {
+      width: auto; // Kartalar o‘z hajmini ushlaydi
+    }
   }
+
   .card {
     display: flex;
     flex-direction: column;
@@ -437,10 +460,13 @@
     border-radius: 24px;
     background-color: #f1f5f9;
     max-width: 384px;
+    overflow: hidden;
+
     .user {
       display: flex;
       gap: 8px;
     }
+
     .account {
       display: flex;
       justify-content: center;
@@ -453,15 +479,18 @@
       color: #0d9488;
       background-color: #fff;
     }
+
     .name-box {
       display: flex;
       flex-direction: column;
       gap: 8px;
     }
+
     .name {
       font-size: 16px;
       font-weight: 500;
     }
+
     .status {
       padding: 4px 8px;
       color: #f0fdfa;
@@ -471,28 +500,156 @@
       font-weight: 500;
       border-radius: 900px;
     }
+
     .comment-section {
       display: flex;
       flex-direction: column;
       gap: 16px;
     }
+
     .title {
       color: #0f172a;
       font-weight: 500;
       margin-bottom: 8px;
     }
+
     .info {
       color: #64748b;
       line-height: 130%;
     }
+
     .review {
       display: flex;
       gap: 12px;
-    }
-    .review img {
-      width: 104px;
-      height: 128px;
-      border-radius: 16px;
+      overflow: hidden;
+
+      img {
+        width: 104px;
+        height: 128px;
+        border-radius: 16px;
+      }
     }
   }
+}
+
+@media screen and (max-width: 1024px) {
+  .intro {
+    .container {
+      gap: 32px;
+    }
+    .left-box {
+      min-width: 450px !important;
+    }
+    .right-box {
+      min-width: 300px !important;
+    }
+    .bottom {
+      margin-bottom: 54px;
+    }
+    .card {
+      width: calc(33.333% - 15px); /* 3 ta qatorga */
+    }
+  }
+  .to {
+    white-space: nowrap;
+  }
+  .tags {
+    width: fit-content;
+    flex-direction: column;
+    align-items: unset !important;
+  }
+  .tag {
+    width: fit-content;
+  }
+  .gift-prize {
+    .left {
+      gap: 0 !important;
+    }
+  }
+  .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 56px;
+    .login__box {
+      width: fit-content !important;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reviews .card {
+    max-width: 314px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .intro .bottom .swiper-slide {
+    display: flex;
+    align-items: start;
+    gap: 12px;
+    background-color: #f1f5f9;
+    border-radius: 24px;
+    width: 330px !important;
+    padding: 16px;
+  }
+  .intro .top .left-box {
+    min-width: 300px !important;
+  }
+  .intro .left-box .bargain {
+    color: black;
+    background-color: #fff;
+    padding: 8px 12px;
+    border-radius: 900px;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .intro .left-box .title {
+    font-size: 30px !important;
+    margin-block: 8px !important;
+  }
+  .intro .left-box .desc {
+    font-size: 14px;
+  }
+  .intro .left-box .choose-btn {
+    font-size: 12px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gift-prize .container {
+    overflow: auto;
+  }
+  .login .info {
+    text-align: center;
+    font-size: 12px;
+  }
+  .login .title {
+    font-size: 20px;
+  }
+  .login .desc {
+    font-size: 12px;
+    white-space: wrap;
+    font-weight: 400;
+    width: 300px;
+  }
+  .login .login-overlay {
+    padding-block: 31px;
+  }
+  .title-box .title {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 110%;
+  }
+  .footer .line-list, .footer .title{
+    display: none;
+  }
+  .footer .line-list.active,
+  .footer .title.active{
+    display: block;
+  }
+
 }

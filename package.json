@@ -1,0 +1,21 @@
+{
+  "name": "gstore",
+  "version": "1.0.0",
+  "description": "The best online techno store",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch sass/style.scss sass/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luminan-dev/GStore.git"
+  },
+  "author": "luminan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luminan-dev/GStore/issues"
+  },
+  "homepage": "https://github.com/luminan-dev/GStore#readme",
+  "keywords": []
+}
