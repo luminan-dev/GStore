@@ -6,6 +6,7 @@ var swiper = new Swiper(".intro-swiper", {
 
 var swiper2 = new Swiper(".intro-bottom-swiper", {
   slidesPerView: 4,
+  spaceBetween: 16,
   breakpoints: {
     1024: {
       slidesPerView: 4,
@@ -60,5 +61,9 @@ var swiper = new Swiper(".reviews-swiper", {
       1024: {
         slidesPerView: 3,
       },
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
   });

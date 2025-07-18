@@ -168,9 +168,6 @@
     .info {
       color: #64748b;
     }
-    .swiper-wrapper {
-      gap: 16px;
-    }
     .swiper-slide {
       display: flex;
       align-items: start;
@@ -182,14 +179,13 @@
     }
   }
 }
-.intro .bottom{
+.intro .bottom {
   margin-bottom: 32px;
 }
 .title-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 24px;
   .title {
     font-size: 32px;
     font-weight: 500;
@@ -209,115 +205,115 @@
 // smartphones section start
 .smartphones,
 .laptops {
-  .swiper-slide {
-    .card {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 24px;
-      min-width: 250px;
-    }
-    .main-box {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      max-width: 232px;
-    }
-    .tags {
-      display: flex;
-      gap: 4px;
-      align-items: center;
-    }
-    .tag {
-      display: flex;
-      padding: 4px 8px;
-      border-radius: 900px;
-    }
-    .discount {
-      color: #0d9488;
-      background: #f0fdfa;
-    }
-    .gift {
-      color: #2563eb;
-      background: #eff6ff;
-    }
-    .card-img {
-      img {
-        max-width: 232px;
-        max-height: 262px;
-      }
-    }
-    .info {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 110%;
-    }
-    .price-box {
-      display: flex;
-      justify-content: space-between;
-      align-items: start;
-      font-size: 14px;
-      line-height: 110%;
-      font-weight: 500;
-    }
-    .left {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-    }
-    .right {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-    .old {
-      color: var(--colors-slate-500, #64748b);
-      text-decoration: line-through;
-      font-weight: 400;
-    }
-    .stock {
-      display: flex;
-      justify-content: space-between;
-      font-weight: 400;
-      color: var(--colors-slate-500, #64748b);
-    }
-    .buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      margin-top: 16px;
-    }
-    .button-box {
-      display: flex;
-      justify-content: space-between;
-      gap: 12px;
-    }
-    .basket {
-      padding: 14px;
-      display: flex;
-      align-items: center;
-      gap: 63px;
-      border-radius: 12px;
-      background: var(--colors-slate-900, #0f172a);
-      color: #fff;
-      width: fit-content;
-    }
-    .trash {
-      z-index: 1;
-    }
-    .heart {
-      background: var(--colors-slate-100, #f1f5f9);
-      padding: 12px;
-      border-radius: 12px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .swiper-slide {
-      width: auto;
-    }
-    // Boshqa style'lar...
+  margin-block: 24px 56px;
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
   }
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+  }
+  .main-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 232px;
+  }
+  .tags {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+  }
+  .tag {
+    display: flex;
+    padding: 4px 8px;
+    border-radius: 900px;
+  }
+  .discount {
+    color: #0d9488;
+    background: #f0fdfa;
+  }
+  .gift {
+    color: #2563eb;
+    background: #eff6ff;
+  }
+  .card-img {
+    img {
+      max-width: 232px;
+      max-height: 262px;
+    }
+  }
+  .info {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 110%;
+  }
+  .price-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    font-size: 14px;
+    line-height: 110%;
+    font-weight: 500;
+  }
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .old {
+    color: var(--colors-slate-500, #64748b);
+    text-decoration: line-through;
+    font-weight: 400;
+  }
+  .stock {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    color: var(--colors-slate-500, #64748b);
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+  }
+  .button-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .basket {
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    gap: 63px;
+    border-radius: 12px;
+    background: var(--colors-slate-900, #0f172a);
+    color: #fff;
+    width: fit-content;
+  }
+  .trash {
+    z-index: 1;
+  }
+  .heart {
+    background: var(--colors-slate-100, #f1f5f9);
+    padding: 12px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  // Boshqa style'lar...
 }
 
 .laptops {
@@ -432,7 +428,9 @@
 // reviews
 .reviews {
   margin-block: 56px;
-
+  .title-box{
+    margin-bottom: 24px;
+  }
   .comment {
     font-weight: 500;
     display: flex;
@@ -446,7 +444,6 @@
 
     .swiper-wrapper {
       display: flex;
-      gap: 32px; // Kartalar orasidagi bo‘shliq
     }
 
     .swiper-slide {
@@ -538,9 +535,7 @@
   .intro {
     .container {
       gap: 32px;
-    }
-    .left-box {
-      min-width: 450px !important;
+      flex-direction: column;
     }
     .right-box {
       min-width: 300px !important;
@@ -554,6 +549,12 @@
   }
   .to {
     white-space: nowrap;
+  }
+  .gift-prize .container{
+    flex-direction: column;
+    .left{
+      width: fit-content;
+    }
   }
   .tags {
     width: fit-content;
@@ -591,7 +592,7 @@
     gap: 12px;
     background-color: #f1f5f9;
     border-radius: 24px;
-    width: 330px !important;
+    width: 100%  !important;
     padding: 16px;
   }
   .intro .top .left-box {
@@ -623,11 +624,31 @@
     align-items: center;
   }
   .gift-prize .container {
-    overflow: auto;
+    flex-direction: column;
+    gap: 16px;
+    .left{
+      gap: 16px !important;
+      flex-direction: column;
+      align-items: start;
+      padding: 16px;
+    }
+    .all{
+      padding: 8px 32px;
+    }
+    .title{
+      font-size: 20px;
+    }
   }
   .login .info {
     text-align: center;
     font-size: 12px;
+  }
+  .login-box{
+    flex-direction: column;
+    .email,
+    .send{
+      width: 90%;
+    }
   }
   .login .title {
     font-size: 20px;
@@ -646,12 +667,12 @@
     font-weight: 500;
     line-height: 110%;
   }
-  .footer .line-list, .footer .title{
+  .footer .line-list,
+  .footer .title {
     display: none;
   }
   .footer .line-list.active,
-  .footer .title.active{
+  .footer .title.active {
     display: block;
   }
-
 }

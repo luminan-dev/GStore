@@ -24,6 +24,7 @@
     <!-- CSS Fayllar -->
     <link rel="stylesheet" href="sass/css/normalize.css" />
     <link rel="stylesheet" href="sass/style.css" />
+    <link rel="stylesheet" href="sass/_core-styles.scss" />
     <link rel="stylesheet" href="sass/all-products.css" />
     <link rel="stylesheet" href="sass/basket.css" />
   </head>
@@ -374,83 +375,279 @@
         </div>
       </header>
 
-
       <main>
-        <div class="categories">
         <div class="container">
-          <ul class="categories__list">
-            <li class="categories__item">
-              <a class="categories__link" href="#!">
-                <img
-                  class="nav__phone"
-                  src="images/icons/smartphones.svg"
-                  alt="phone"
-                />
-                Смартфоны
-              </a>
-            </li>
-            <li class="categories__item">
-              <a class="categories__link" href="#!">
-                <img
-                  class="nav__laptop"
-                  src="images/icons/laptops.svg"
-                  alt="laptops"
-                />
-                Ноутбуки
-              </a>
-            </li>
-            <li class="categories__item">
-              <a class="categories__link" href="#!">
-                <img
-                  class="nav__tablet"
-                  src="images/icons/tablets.svg"
-                  alt="tablets"
-                />
-                Планшеты
-              </a>
-            </li>
-            <li class="categories__item">
-              <a class="categories__link" href="#!">
-                <img
-                  class="nav__styler"
-                  src="images/icons/stylers.svg"
-                  alt="styler"
-                />
-                Стайлеры
-              </a>
-            </li>
-            <li class="categories__item">
-              <a class="categories__link" href="#!">
-                <img
-                  class="nav__console"
-                  src="images/icons/consoles.svg"
-                  alt="consoles"
-                />
-                Приставки
-              </a>
-            </li>
-            <li class="categories__item">
-              <a class="categories__link" href="#!">
-                <img
-                  class="nav__acsessory"
-                  src="images/icons/acsessories.svg"
-                  alt="acsessory"
-                />
-                Акссесуары
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      
-        <div class="intro">
-          <div class="main-category">
+          <div class="categories">
             <div class="container">
-              <div class="main-wrapper">
-                <div class="menus">
-                  <a class="menu main" href="#!">Главная</a>
-                  <span class="slash">/</span>
-                  <a class="menu smartphone" href="#!">Корзина</a>
+              <ul class="categories__list">
+                <li class="categories__item">
+                  <a class="categories__link" href="#!">
+                    <img
+                      class="nav__phone"
+                      src="images/icons/smartphones.svg"
+                      alt="phone"
+                    />
+                    Смартфоны
+                  </a>
+                </li>
+                <li class="categories__item">
+                  <a class="categories__link" href="#!">
+                    <img
+                      class="nav__laptop"
+                      src="images/icons/laptops.svg"
+                      alt="laptops"
+                    />
+                    Ноутбуки
+                  </a>
+                </li>
+                <li class="categories__item">
+                  <a class="categories__link" href="#!">
+                    <img
+                      class="nav__tablet"
+                      src="images/icons/tablets.svg"
+                      alt="tablets"
+                    />
+                    Планшеты
+                  </a>
+                </li>
+                <li class="categories__item">
+                  <a class="categories__link" href="#!">
+                    <img
+                      class="nav__styler"
+                      src="images/icons/stylers.svg"
+                      alt="styler"
+                    />
+                    Стайлеры
+                  </a>
+                </li>
+                <li class="categories__item">
+                  <a class="categories__link" href="#!">
+                    <img
+                      class="nav__console"
+                      src="images/icons/consoles.svg"
+                      alt="consoles"
+                    />
+                    Приставки
+                  </a>
+                </li>
+                <li class="categories__item">
+                  <a class="categories__link" href="#!">
+                    <img
+                      class="nav__acsessory"
+                      src="images/icons/acsessories.svg"
+                      alt="acsessory"
+                    />
+                    Акссесуары
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- intro section -->
+          <div class="intro">
+            <div class="main-category">
+              <div class="container">
+                <div class="main-wrapper">
+                  <div class="menus">
+                    <a class="menu main" href="#!">Главная</a>
+                    <span class="slash">/</span>
+                    <a class="menu smartphone" href="#!">Корзина</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="intro-wrapper">
+              <div class="intro__left-box">
+                <h1 class="title">Корзина</h1>
+
+                <div class="intro__products">
+                  <div class="card-img">
+                    <img
+                      class="card-img-item"
+                      src="images/ip-15-blue.svg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="item-details">
+                    <div class="left">
+                      <div class="product-name">
+                        iPhone 15 Pro 256GB Natural Titanium
+                      </div>
+                      <div class="product-color">
+                        <span class="articul">Артикул: 28560</span>
+                        <span class="color">Цвет: голубой</span>
+                        <span class="stock-amount">Наличие: 12 шт.</span>
+                      </div>
+                      <div class="cart-action-controls">
+                        <div class="category-checkbox-wrapper">
+                          <input
+                            type="checkbox"
+                            name="checkbox"
+                            id="category-input-2"
+                          />
+                          <label
+                            class="category-checkbox"
+                            for="category-input-2"
+                          >
+                            +1 год гарантии (+4 000 ₽, ~40USDT)
+                            <img
+                              class="input-checked"
+                              src="images/icons/input-checked-icon.svg  "
+                              alt=""
+                            />
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="right">
+                      <div class="price-rubl">
+                        <div class="old">179 900 ₽</div>
+                        <div class="new">145 900 ₽</div>
+                      </div>
+                      <div class="price-usdt">
+                        <img src="images/icons/usdt.svg" alt="" />
+                        <span class="price-dollar">560 $</span>
+                      </div>
+                      <div class="product-counter">
+                        <button class="delete counter-item" title="delete">
+                          <img src="images/icons/delete.svg" alt="" />
+                        </button>
+                        <button
+                          class="favourites counter-item"
+                          title="favourites"
+                        >
+                          <img src="images/icons/heart.svg" alt="" />
+                        </button>
+                        <div class="counter counter-item">
+                          <button class="minus" title="minus">
+                            <img src="images/icons/minus.svg" alt="" />
+                          </button>
+                          <button class="amount">1</button>
+                          <button class="plus" title="plus">
+                            <img src="images/icons/plus.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="intro__products">
+                  <div class="card-img">
+                    <img
+                      class="card-img-item"
+                      src="images/ip-15-blue.svg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="item-details">
+                    <div class="left">
+                      <div class="product-name">
+                        iPhone 15 Pro 256GB Natural Titanium
+                      </div>
+                      <div class="product-color">
+                        <span class="articul">Артикул: 28560</span>
+                        <span class="color">Цвет: голубой</span>
+                        <span class="stock-amount">Наличие: 12 шт.</span>
+                      </div>
+                      <div class="cart-action-controls">
+                        <div class="category-checkbox-wrapper">
+                          <input
+                            type="checkbox"
+                            name="checkbox"
+                            id="category-input-2"
+                          />
+                          <label
+                            class="category-checkbox"
+                            for="category-input-2"
+                          >
+                            +1 год гарантии (+4 000 ₽, ~40USDT)
+                            <img
+                              class="input-checked"
+                              src="images/icons/input-checked-icon.svg  "
+                              alt=""
+                            />
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="right">
+                      <div class="price-rubl">
+                        <div class="old">179 900 ₽</div>
+                        <div class="new">145 900 ₽</div>
+                      </div>
+                      <div class="price-usdt">
+                        <img src="images/icons/usdt.svg" alt="" />
+                        <span class="price-dollar">560 $</span>
+                      </div>
+                      <div class="product-counter">
+                        <button class="delete counter-item" title="delete">
+                          <img src="images/icons/delete.svg" alt="" />
+                        </button>
+                        <button
+                          class="favourites counter-item"
+                          title="favourites"
+                        >
+                          <img src="images/icons/heart.svg" alt="" />
+                        </button>
+                        <div class="counter counter-item">
+                          <button class="minus" title="minus">
+                            <img src="images/icons/minus.svg" alt="" />
+                          </button>
+                          <button class="amount">1</button>
+                          <button class="plus" title="plus">
+                            <img src="images/icons/plus.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="intro__right-box">
+                <div class="payment-box">
+                  <div class="payment-info">
+                    <span class="infoo">Стоимость</span>
+                    <span class="info tag"
+                      >Принимаем оплату в рублях или USDT</span
+                    >
+                  </div>
+                  <div class="promo-discount">
+                    <div class="price">
+                      <span class="amount">Товары, 3 шт.</span>
+                      <div class="price-box">
+                        <div class="price-rubl">291 800 ₽</div>
+                        <div class="price-usd">2 900 $</div>
+                      </div>
+                    </div>
+                    <div class="promo">
+                      <div class="descc">Промокод</div>
+                      <div class="discount">— 16 700 ₽</div>
+                    </div>
+                    <div class="total-payment">
+                      <div class="infoo">К оплате</div>
+                      <div class="price-box">
+                        <div class="price-rubl">275 100 ₽</div>
+                        <div class="price-usd">2 750 $</div>
+                      </div>
+                    </div>
+                    <div class="checkout">
+                      <a href="#!" class="checkout-link">К оформлению</a>
+                    </div>
+                    <div class="desc">Доступные способы и время доставки можно выбрать при оформлении заказа</div>
+                  </div>
+                </div>
+
+                <div class="promo-box payment-box">
+                  <div class="desc">Промокод</div>
+                  <div class="promo-use">
+                    <input class="promo-input" type="text" placeholder="Промокод">
+                    <button class="send checkout-link">Применить</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -458,6 +655,7 @@
         </div>
       </main>
 
+      <!-- footer -->
       <footer class="footer">
         <div class="container">
           <div class="footer-container">

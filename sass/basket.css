@@ -1,0 +1,222 @@
+.intro {
+  display: unset;
+}
+.intro .intro-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+.intro .intro__right-box .payment-box {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  margin-bottom: 16px;
+}
+.intro .intro__right-box .promo-input {
+  background: #F1F5F9;
+  padding: 14px 16px;
+  border-radius: 12px;
+  margin-right: 12px;
+}
+.intro .intro__right-box .payment-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 28px;
+}
+.intro .intro__right-box .tag {
+  display: flex;
+  padding: 4px 8px;
+  border-radius: 900px;
+}
+.intro .intro__right-box .info {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  color: #0d9488;
+  background: #f0fdfa;
+}
+.intro .intro__right-box .infoo {
+  font-weight: 500;
+}
+.intro__left-box .title {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 110%;
+  color: #0f172a;
+  margin-block: 32px;
+}
+.intro__products {
+  display: flex;
+  width: 800px;
+  gap: 16px;
+  align-items: center;
+  border-bottom: 1px solid #e2e8f0;
+  padding-block: 16px;
+}
+.intro__products .card-img-item {
+  width: 73.9199981689px;
+  height: 86.3999938965px;
+  padding: 10.8px 7.04px;
+}
+.intro .item-details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.intro .item-details .left {
+  display: flex;
+  flex-direction: column;
+  gap: 12.5px;
+}
+.intro .item-details .name {
+  font-weight: 500;
+}
+.intro .item-details .product-color {
+  display: flex;
+  gap: 24px;
+  color: #64748b;
+}
+.intro .item-details .right {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: space-between;
+  align-items: end;
+}
+.intro .item-details .price-rubl {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.intro .item-details .old {
+  text-decoration: line-through;
+  color: #64748b;
+  font-size: 400;
+}
+.intro .item-details .new {
+  font-weight: 500;
+  font-size: 16px;
+}
+.intro .item-details .price-dollar {
+  font-weight: 500;
+}
+.intro .item-details .price-usdt {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.intro .item-details .cart-action-controls {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.intro .item-details .product-counter {
+  display: flex;
+  gap: 8px;
+}
+.intro .item-details .counter-item {
+  padding: 8px;
+  background: #f1f5f9;
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro .item-details .counter {
+  width: 88px !important;
+  display: flex;
+  justify-content: space-between;
+}
+.intro .item-details .minus,
+.intro .item-details .plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro .item-details #category-input-2 {
+  display: none;
+}
+
+.promo-discount .promo-discount {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.promo-discount .price {
+  display: flex;
+  justify-content: space-between;
+  color: #64748b;
+}
+.promo-discount .price-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: end;
+}
+.promo-discount .promo {
+  display: flex;
+  justify-content: space-between;
+  color: #0d9488;
+  margin-block: 16px 24px;
+}
+.promo-discount .total-payment {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}
+.promo-discount .total-payment .price-rubl {
+  font-size: 20px;
+}
+.promo-discount .checkout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #0f172a;
+  border-radius: 12px;
+  padding: 16px;
+  color: #fff !important;
+  margin-block: 16px;
+}
+.promo-discount .checkout .checkout-link {
+  color: #fff;
+  font-weight: 500;
+}
+.promo-discount .desc {
+  color: #64748b !important;
+}
+
+.promo-use {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.promo-input {
+  height: 44px;
+}
+
+.send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #0f172a;
+  border-radius: 12px;
+  padding: 16px;
+  color: #fff !important;
+  margin-block: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+  .intro-wrapper {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=basket.css.map */

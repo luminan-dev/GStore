@@ -1,0 +1,225 @@
+.intro {
+  display: unset;
+  .intro-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+  }
+  .intro__right-box {
+    .payment-box {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      padding: 24px;
+      border: 1px solid #e2e8f0;
+      border-radius: 24px;
+      margin-bottom: 16px;
+    }
+    .promo-input{
+      background: #F1F5F9;
+      padding: 14px 16px;
+      border-radius: 12px;
+      margin-right: 12px;
+    }
+    .payment-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 28px;
+    }
+    .tag {
+      display: flex;
+      padding: 4px 8px;
+      border-radius: 900px;
+    }
+    .info {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 120%;
+      color: #0d9488;
+      background: #f0fdfa;
+    }
+    .infoo {
+      font-weight: 500;
+    }
+  }
+  &__left-box {
+    .title {
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 110%;
+      color: #0f172a;
+      margin-block: 32px;
+    }
+  }
+  &__products {
+    display: flex;
+    width: 800px;
+    gap: 16px;
+    align-items: center;
+    border-bottom: 1px solid #e2e8f0;
+    padding-block: 16px;
+    .card-img-item {
+      width: 73.91999816894531px;
+      height: 86.39999389648438px;
+      padding: 10.8px 7.04px;
+    }
+  }
+  .item-details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 12.5px;
+    }
+    .name {
+      font-weight: 500;
+    }
+    .product-color {
+      display: flex;
+      gap: 24px;
+      color: #64748b;
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      justify-content: space-between;
+      align-items: end;
+    }
+    .price-rubl {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+    .old {
+      text-decoration: line-through;
+      color: #64748b;
+      font-size: 400;
+    }
+    .new {
+      font-weight: 500;
+      font-size: 16px;
+    }
+    .price-dollar {
+      font-weight: 500;
+    }
+    .price-usdt {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .cart-action-controls {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .product-counter {
+      display: flex;
+      gap: 8px;
+    }
+    .counter-item {
+      padding: 8px;
+      background: #f1f5f9;
+      border-radius: 8px;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .counter {
+      width: 88px !important;
+      display: flex;
+      justify-content: space-between;
+    }
+    .minus,
+    .plus {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #category-input-2 {
+      display: none;
+    }
+  }
+}
+
+.promo-discount {
+  .promo-discount {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .price {
+    display: flex;
+    justify-content: space-between;
+    color: #64748b;
+  }
+  .price-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: end;
+  }
+  .promo {
+    display: flex;
+    justify-content: space-between;
+    color: #0d9488;
+    margin-block: 16px 24px;
+  }
+  .total-payment {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    .price-rubl {
+      font-size: 20px;
+    }
+  }
+  .checkout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #0f172a;
+    border-radius: 12px;
+    padding: 16px;
+    color: #fff !important;
+    margin-block: 16px;
+    .checkout-link {
+      color: #fff;
+      font-weight: 500;
+    }
+  }
+  .desc {
+    color: #64748b !important;
+  }
+}
+.promo-use{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.promo-input{
+  height: 44px;
+}
+.send{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    background: #0f172a;
+    border-radius: 12px;
+    padding: 16px;
+    color: #fff !important;
+    margin-block: 16px;
+  }
+
+
+  @media screen and (max-width: 1024px) {
+    .intro-wrapper{
+      flex-direction: column;
+    }
+  }

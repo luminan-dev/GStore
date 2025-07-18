@@ -86,6 +86,7 @@
       background: #f1f5f9;
       position: relative;
       transition: all 0.3s linear;
+      cursor: pointer;
     }
     &__item:hover {
       background-color: #0f172a;
@@ -261,6 +262,10 @@
       width: 100%;
       justify-content: space-between;
     }
+    .header-bottom__links {
+      flex-direction: column;
+      align-items: start;
+    }
   }
 }
 .categories {
@@ -268,8 +273,8 @@
     overflow: auto;
   }
 }
-.gift-prize .container .title {
-  font-size: 20px !important;
+.categories .categories__list::-webkit-scrollbar {
+  display: none;
 }
 .login .desc {
   text-align: center !important;
