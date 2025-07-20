@@ -190,6 +190,9 @@
     font-size: 32px;
     font-weight: 500;
   }
+  .all-buttun-box{
+    position: relative;
+  }
   .all {
     padding: 14px;
     display: flex;
@@ -337,6 +340,8 @@
       justify-content: space-between;
       gap: 63px;
       align-items: end;
+      background-size: cover;
+      width: 100% !important;
     }
     .all {
       padding: 14px;
@@ -430,6 +435,40 @@
   margin-block: 56px;
   .title-box{
     margin-bottom: 24px;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 12px;
+    padding: 14px;
+    background: #F1F5F9;
+    opacity: 1 !important;
+  }
+  .swiper-button-prev img,
+  .swiper-button-next img{
+    width: 16px;
+    height: 16px;
+  }
+  .all-button-box{
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: center;
+  }
+  .navigation-bar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    margin-top: 24px;
+  }
+  .swiper-button-next::after{
+    content: none;
+  }
+  .swiper-button-prev::after{
+    content: none;
   }
   .comment {
     font-weight: 500;
@@ -634,6 +673,7 @@
     }
     .all{
       padding: 8px 32px;
+      width: 100%;
     }
     .title{
       font-size: 20px;

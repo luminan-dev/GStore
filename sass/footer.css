@@ -7,6 +7,15 @@
   justify-content: space-between;
   gap: 32px;
 }
+.footer .container__bottom {
+  padding-top: 16px;
+  display: flex;
+  align-items: center;
+}
+.footer .bottom-wrapper {
+  border-top: 1px solid #334155;
+  margin-top: 56px;
+}
 .footer__left {
   display: flex;
   flex-direction: column;
@@ -23,6 +32,7 @@
   display: flex;
   justify-content: space-between;
   gap: 32px;
+  margin-top: 21px;
 }
 .footer .footer-container {
   display: flex;

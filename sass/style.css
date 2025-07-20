@@ -58,6 +58,11 @@ body {
   justify-content: space-between;
 }
 
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  right: unset;
+  left: unset;
+}
+
 .swiper-pagination-bullet {
   width: 24px;
   height: 2px;
@@ -535,6 +540,9 @@ body {
   font-size: 32px;
   font-weight: 500;
 }
+.title-box .all-buttun-box {
+  position: relative;
+}
 .title-box .all {
   padding: 14px;
   display: flex;
@@ -698,6 +706,8 @@ body {
   justify-content: space-between;
   gap: 63px;
   align-items: end;
+  background-size: cover;
+  width: 100% !important;
 }
 .gift-prize .container .all {
   padding: 14px;
@@ -792,6 +802,42 @@ body {
 }
 .reviews .title-box {
   margin-bottom: 24px;
+}
+.reviews .swiper-button-prev,
+.reviews .swiper-button-next {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 12px;
+  padding: 14px;
+  background: #F1F5F9;
+  opacity: 1 !important;
+}
+.reviews .swiper-button-prev img,
+.reviews .swiper-button-next img {
+  width: 16px;
+  height: 16px;
+}
+.reviews .all-button-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+.reviews .navigation-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  margin-top: 24px;
+}
+.reviews .swiper-button-next::after {
+  content: none;
+}
+.reviews .swiper-button-prev::after {
+  content: none;
 }
 .reviews .comment {
   font-weight: 500;
@@ -981,6 +1027,7 @@ body {
   }
   .gift-prize .container .all {
     padding: 8px 32px;
+    width: 100%;
   }
   .gift-prize .container .title {
     font-size: 20px;
@@ -1031,6 +1078,15 @@ body {
   justify-content: space-between;
   gap: 32px;
 }
+.footer .container__bottom {
+  padding-top: 16px;
+  display: flex;
+  align-items: center;
+}
+.footer .bottom-wrapper {
+  border-top: 1px solid #334155;
+  margin-top: 56px;
+}
 .footer__left {
   display: flex;
   flex-direction: column;
@@ -1047,6 +1103,7 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 32px;
+  margin-top: 21px;
 }
 .footer .footer-container {
   display: flex;
@@ -1073,4 +1130,11 @@ body {
 .footer .line__link {
   color: #64748b;
   font-size: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer .footer-container {
+    flex-direction: column;
+    gap: 32px;
+  }
 }/*# sourceMappingURL=style.css.map */

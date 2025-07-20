@@ -48,6 +48,10 @@ body{
   min-height: 100vh;
   justify-content: space-between;
 }
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+    right: unset;
+    left: unset;
+}
 .swiper-pagination-bullet {
     width: 24px;
     height: 2px;
