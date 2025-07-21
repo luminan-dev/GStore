@@ -66,8 +66,7 @@
         #f37335 100%
       )
       /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-    max-width: 384px;
-    max-height: 334px;
+    width: 384px;
     border-radius: 32px;
     justify-content: space-between;
     opacity: 1;
@@ -189,8 +188,9 @@
   .title {
     font-size: 32px;
     font-weight: 500;
+    line-height: 110%;
   }
-  .all-buttun-box{
+  .all-buttun-box {
     position: relative;
   }
   .all {
@@ -210,8 +210,8 @@
 .laptops {
   margin-block: 24px 56px;
   .cards {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 32px;
   }
   .card {
@@ -224,7 +224,7 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    max-width: 232px;
+    max-width: 100%;
   }
   .tags {
     display: flex;
@@ -245,9 +245,11 @@
     background: #eff6ff;
   }
   .card-img {
+    max-width: 232px;
+    max-height: 262px;
+    margin: 0 auto;
     img {
-      max-width: 232px;
-      max-height: 262px;
+      width: 100%;
     }
   }
   .info {
@@ -382,7 +384,7 @@
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 32px;
-    background-size: cover  ;
+    background-size: cover;
   }
   .container {
     width: 100%;
@@ -395,6 +397,7 @@
     font-weight: 500;
     text-align: center;
     margin-bottom: 12px;
+    line-height: 110%;
   }
   .desc {
     font-size: 16px;
@@ -434,7 +437,7 @@
 // reviews
 .reviews {
   margin-block: 56px;
-  .title-box{
+  .title-box {
     margin-bottom: 24px;
   }
   .swiper-button-prev,
@@ -444,31 +447,31 @@
     height: fit-content;
     border-radius: 12px;
     padding: 14px;
-    background: #F1F5F9;
+    background: #f1f5f9;
     opacity: 1 !important;
   }
   .swiper-button-prev img,
-  .swiper-button-next img{
+  .swiper-button-next img {
     width: 16px;
     height: 16px;
   }
-  .all-button-box{
+  .all-button-box {
     display: flex;
     justify-content: space-between;
     gap: 12px;
     align-items: center;
   }
-  .navigation-bar{
+  .navigation-bar {
     position: relative;
     display: flex;
     align-items: center;
     gap: 38px;
     margin-top: 24px;
   }
-  .swiper-button-next::after{
+  .swiper-button-next::after {
     content: none;
   }
-  .swiper-button-prev::after{
+  .swiper-button-prev::after {
     content: none;
   }
   .comment {
@@ -571,6 +574,46 @@
   }
 }
 
+@media (max-width: 1250px) {
+  .container {
+    max-width: 100%;
+    padding-inline: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .intro {
+    .container {
+      flex-direction: column;
+      gap: 34px;
+      .title {
+        max-width: 100%;
+      }
+      .left-box,
+      .right-box {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .header {
+    .header-bottom {
+      &__links,
+      .search-menu,
+      .search-box {
+        width: 100%;
+      }
+    }
+  }
+  .categories {
+    &__list {
+      margin-right: -20px;
+      padding-right: 20px;
+    }
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .intro {
     .container {
@@ -590,9 +633,9 @@
   .to {
     white-space: nowrap;
   }
-  .gift-prize .container{
+  .gift-prize .container {
     flex-direction: column;
-    .left{
+    .left {
       width: fit-content;
     }
   }
@@ -624,17 +667,85 @@
   .reviews .card {
     max-width: 314px;
   }
+  .smartphones .cards,
+  .laptops .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .smartphones .card,
+  .laptops .card {
+    padding: 0;
+  }
+  .smartphones .gift,
+  .laptops .gift {
+    display: none;
+  }
+  .gift-prize .container .left{
+    flex-direction: column;
+    align-items: start;
+    gap: 15px !important;
+  }
+  .gift-prize .container .title{
+    font-size: 22px;
+    max-width: unset;
+  }
+}
+@media(max-width: 650px){
+  .reviews{
+    display: none;
+  }
+}
+@media(max-width: 540px){
+  .login .desc{
+    white-space: wrap;
+  }
+}
+@media (max-width: 500px) {
+  .smartphones .card-img,
+  .laptops .card-img {
+    max-width: 150px;
+  }
+  .smartphones .button-box .basket,
+  .laptops .button-box .basket {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .title-box .all {
+    display: none;
+  }
+  .trash,
+  .heart img {
+    width: 14px;
+    height: 14px;
+  }
+  .basket{
+    padding: 9px 12px !important;
+    border-radius: 8px !important;
+    gap: 0 !important;
+  }
+  .heart{
+    padding: 9px !important;
+    border-radius: 8px !important;
+  }
+  .smartphones,
+  .laptops {
+    .card {
+      .tag {
+        font-size: 10px;
+        margin-top: 24px;
+      }
+      .buttons,
+      .info,
+      .left,
+      .right,
+      .to {
+        font-size: 12px !important;
+      }
+    }
+  }
 }
 @media screen and (max-width: 375px) {
-  .intro .bottom .swiper-slide {
-    display: flex;
-    align-items: start;
-    gap: 12px;
-    background-color: #f1f5f9;
-    border-radius: 24px;
-    width: 100%  !important;
-    padding: 16px;
-  }
   .intro .top .left-box {
     min-width: 300px !important;
   }
@@ -666,17 +777,17 @@
   .gift-prize .container {
     flex-direction: column;
     gap: 16px;
-    .left{
+    .left {
       gap: 16px !important;
       flex-direction: column;
       align-items: start;
       padding: 16px;
     }
-    .all{
+    .all {
       padding: 8px 32px;
       width: 100%;
     }
-    .title{
+    .title {
       font-size: 20px;
     }
   }
@@ -684,10 +795,10 @@
     text-align: center;
     font-size: 12px;
   }
-  .login-box{
+  .login-box {
     flex-direction: column;
     .email,
-    .send{
+    .send {
       width: 90%;
     }
   }
@@ -695,25 +806,20 @@
     font-size: 20px;
   }
   .login .desc {
-    font-size: 12px;
+    font-size: 12px !important;
     white-space: wrap;
     font-weight: 400;
     width: 300px;
   }
+  .login-box .email, .login-box .send{
+    width: unset !important;
+  }
   .login .login-overlay {
-    padding-block: 31px;
+    padding: 40px 32px
   }
   .title-box .title {
     font-size: 22px;
     font-weight: 500;
     line-height: 110%;
-  }
-  .footer .line-list,
-  .footer .title {
-    display: none;
-  }
-  .footer .line-list.active,
-  .footer .title.active {
-    display: block;
   }
 }

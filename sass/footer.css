@@ -26,7 +26,10 @@
   height: 56px;
 }
 .footer .text {
-  color: #64748B;
+  color: #64748b;
+  width: fit-contentt;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .footer .actions {
   display: flex;
@@ -62,6 +65,26 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .footer__left-link img {
+    width: 100.5714263916px;
+    height: 32px;
+    opacity: 1;
+  }
+  .footer__left {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .footer .container {
+    flex-direction: column;
+  }
+  .footer .actions {
+    flex-wrap: wrap;
+  }
+  .footer .container__bottom {
+    gap: 16px !important;
+  }
   .footer .footer-container {
     flex-direction: column;
     gap: 32px;
