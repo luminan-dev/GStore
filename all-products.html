@@ -447,7 +447,7 @@
             <div class="menus">
               <a class="menu main" href="#!">Главная</a>
               <span class="slash">/</span>
-              <a class="menu smartphone" href="#!">Смартфоны</a>
+              <a class="menu smartphone">Смартфоны</a>
             </div>
             <h2 class="title">Смартфоны</h2>
           </div>
@@ -455,11 +455,13 @@
       </div>
 
       <main class="main">
-
+        <!-- all-products section -->
         <section class="products-section all-products">
           <div class="container">
             <div class="all-products-left">
-              <div class="prices-box">
+
+              <div class="categories-container">
+                <div class="prices-box">
                 <span class="price-title">Стоимость</span>
                 <div class="prices">
                   <span class="start-price">от 10 000 ₽</span>
@@ -467,8 +469,7 @@
                 </div>
                 <img class="price-line" src="images/price-line.svg" alt="line"/>
               </div>
-
-              <div class="categories-box">
+                <div class="categories-box">
                 <span class="categories-box-title">
                   Категория
                   <img src="images/icons/chevron-up.svg" alt="chevron-up" />
@@ -685,6 +686,21 @@
                   фильтры
                 </button>
               </div>
+
+              </div>
+              <!-- sale-section-bg -->
+              <section class="sale-bg-section">
+                <div class="container">
+                  <div class="bg-overlay">
+                    <h2 class="title">Посмотрите наши акции</h2>
+                    <span class="info">Вы точно найдёте что‑то интересное для себя</span>
+                    <a  class="all" href="https://gstoreinluminar.netlify.app/all-products.html">
+                      Vse товары
+                      <img src="images/icons/arrow-next.svg" alt="arrow-next" />
+                    </a>
+                  </div>
+                </div>
+              </section>
             </div>
             <!-- SMARTPHONES -->
             <div class="smartphones">
@@ -1092,6 +1108,8 @@
                     </div>
                   </div>
                 </div>
+
+                <!-- login section -->
                 <section class="login">
                   <div class="container">
                     <div class="login-overlay">
@@ -1115,8 +1133,9 @@
             </div>
           </div>
         </section>
-        
       </main>
+
+      <!-- footer -->
       <footer class="footer">
         <div class="container">
           <div class="footer-container">
@@ -1224,6 +1243,14 @@
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="bottom-wrapper">
+          <div class="container container__bottom">
+            <a href="#!" class="footer__bottom-link text">Политика обработки персональных данных</a>
+            <span class="footer__bottom-link text">Возникли сложности? Пишите в бот — 
+              <a href="#!" class="footer__bottom-link text">@gstore_bot</a>
+            </span>
           </div>
         </div>
       </footer>

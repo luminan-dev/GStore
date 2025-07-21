@@ -15,11 +15,13 @@
   border-radius: 24px;
   margin-bottom: 16px;
 }
+.intro .intro__right-box .payment-box.second {
+  gap: 16px;
+}
 .intro .intro__right-box .promo-input {
   background: #F1F5F9;
   padding: 14px 16px;
   border-radius: 12px;
-  margin-right: 12px;
 }
 .intro .intro__right-box .payment-info {
   display: flex;
@@ -212,7 +214,6 @@
   border-radius: 12px;
   padding: 16px;
   color: #fff !important;
-  margin-block: 16px;
 }
 
 @media screen and (max-width: 1024px) {

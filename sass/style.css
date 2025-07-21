@@ -746,6 +746,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 32px;
+  background-size: cover;
 }
 .login .container {
   width: 100%;

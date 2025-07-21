@@ -45,6 +45,51 @@
     }
   }
 }
+.sale-bg-section{
+  .container{
+    margin: 0 !important;
+  }
+  .bg-overlay{
+    padding: 32px;
+    background-image: url(../images/gift-bg2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 32px;
+    background-size: cover;
+    display: flex;
+    color: white;
+    flex-direction: column;;
+  }
+  .title{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 110%;
+    margin-bottom: 12px;
+  }
+  .info{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .all{
+    padding: 14px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    border-radius: 12px;
+    width: fit-content;
+    background: #f1f5f9;
+    margin-top: 100px;
+  }
+}
+.login-overlay{
+  padding: 91px;
+  .title{
+    margin-bottom: 30px;
+  }
+}
 .products.all-products {
   margin-top: 0;
 }
@@ -64,7 +109,21 @@
 .products-section.all-products .container {
   display: flex;
   gap: 32px;
+  align-items: stretch;
   margin-bottom: 56px;
+}
+.smartphones .container {
+  gap: 0 !important;
+  margin:  0 !important;
+  .login{
+    margin: 0 ;
+    margin-top: 56px;
+  }
+}
+.all-products-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .all-products-box {
   display: flex;
