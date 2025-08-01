@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch sass/style.scss sass/css/style.css"
+    "sass": "sass --watch sass/style.scss sass/css/style.css",
+    "basket": "sass --watch sass/pages/basket.scss sass/css/basket.css",
+    "all-products": "sass --watch sass/pages/all-products.scss sass/css/all-products.css"
   },
   "repository": {
     "type": "git",

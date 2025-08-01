@@ -9,7 +9,7 @@
   .container__bottom {
     padding-top: 16px;
     display: flex;
-    align-items: center;
+    align-items: start;
   }
   .bottom-wrapper {
     border-top: 1px solid #334155;
@@ -19,10 +19,6 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-  }
-  &__left-link {
-    width: 176px;
-    height: 56px;
   }
   .text {
     color: #64748b;

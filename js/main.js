@@ -7,6 +7,7 @@ var swiper = new Swiper(".intro-swiper", {
 var swiper2 = new Swiper(".intro-bottom-swiper", {
   slidesPerView: 4,
   spaceBetween: 16,
+  loop: true,
   breakpoints: {
     1024: {
       slidesPerView: 4,
@@ -17,8 +18,8 @@ var swiper2 = new Swiper(".intro-bottom-swiper", {
     640: {
       slidesPerView: 2,
     },
-    320: {
-      slidesPerView: 1,
+    375: {
+      slidesPerView: 1.2,
     },
   }, 
   pagination: {
@@ -52,7 +53,10 @@ var swiper = new Swiper(".reviews-swiper", {
       350: {
         slidesPerView: 1,
       },
-      640: {
+      530:{
+        slidesPerView: 2,
+      },
+      640:{
         slidesPerView: 2,
       },
       768: {

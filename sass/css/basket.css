@@ -1,10 +1,19 @@
 .intro {
-  display: unset;
+  display: unset !important;
 }
 .intro .intro-wrapper {
   display: flex;
-  justify-content: space-between;
   gap: 32px;
+}
+.intro .intro__left-box {
+  width: 100%;
+}
+.intro #category-input-3 {
+  display: none;
+}
+.intro .intro__right-box {
+  width: 384px;
+  margin-top: 16px;
 }
 .intro .intro__right-box .payment-box {
   display: flex;
@@ -14,9 +23,11 @@
   border: 1px solid #e2e8f0;
   border-radius: 24px;
   margin-bottom: 16px;
+  width: 100%;
 }
 .intro .intro__right-box .payment-box.second {
   gap: 16px;
+  margin-bottom: 56px;
 }
 .intro .intro__right-box .promo-input {
   background: #F1F5F9;
@@ -27,7 +38,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 28px;
 }
 .intro .intro__right-box .tag {
   display: flex;
@@ -40,29 +50,35 @@
   line-height: 120%;
   color: #0d9488;
   background: #f0fdfa;
+  text-align: center;
+  white-space: nowrap;
 }
 .intro .intro__right-box .infoo {
   font-weight: 500;
+  font-size: 16px;
 }
 .intro__left-box .title {
-  font-size: 40px;
+  font-size: 40px !important;
   font-weight: 500;
   line-height: 110%;
-  color: #0f172a;
-  margin-block: 32px;
+  color: #0f172a !important;
+  margin-bottom: 32px;
 }
 .intro__products {
   display: flex;
-  width: 800px;
+  width: 100%;
   gap: 16px;
   align-items: center;
   border-bottom: 1px solid #e2e8f0;
-  padding-block: 16px;
+  padding-block: 12px;
+  position: relative;
 }
 .intro__products .card-img-item {
-  width: 73.9199981689px;
-  height: 86.3999938965px;
-  padding: 10.8px 7.04px;
+  width: 78px;
+  height: 86px;
+}
+.intro__products .card-img {
+  padding: 11px 7px;
 }
 .intro .item-details {
   display: flex;
@@ -74,7 +90,7 @@
   flex-direction: column;
   gap: 12.5px;
 }
-.intro .item-details .name {
+.intro .item-details .product-name {
   font-weight: 500;
 }
 .intro .item-details .product-color {
@@ -97,7 +113,6 @@
 .intro .item-details .old {
   text-decoration: line-through;
   color: #64748b;
-  font-size: 400;
 }
 .intro .item-details .new {
   font-weight: 500;
@@ -208,7 +223,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: -moz-fit-content;
   width: fit-content;
   background: #0f172a;
   border-radius: 12px;
@@ -220,4 +234,92 @@
   .intro-wrapper {
     flex-direction: column;
   }
-}/*# sourceMappingURL=basket.css.map */
+  .intro__right-box {
+    width: 100% !important;
+  }
+}
+@media (max-width: 768px) {
+  .intro .item-details .product-color {
+    display: none;
+  }
+  .intro__left-box .title {
+    font-size: 24px !important;
+  }
+  .intro .item-details .product-name {
+    font-size: 12px;
+  }
+  .intro .item-details .price-rubl {
+    font-size: 12px;
+  }
+  .intro .item-details .old {
+    font-size: 10px;
+  }
+  .intro .item-details .new {
+    font-size: 12px;
+  }
+  .price-dollar {
+    font-size: 12px;
+  }
+  .intro .item-details .counter {
+    font-size: 12px;
+    width: 72px !important;
+    height: 24px;
+  }
+  .intro .item-details .left {
+    gap: 4px;
+  }
+  .intro .item-details .right {
+    gap: 2px;
+  }
+  .intro .intro__right-box .info {
+    font-size: 10px;
+  }
+  .intro__products .card-img-item {
+    width: 36px;
+    height: 45px;
+  }
+  .intro__products .card-img {
+    padding: 4px 5.6px;
+  }
+  .intro__products {
+    gap: 6px;
+  }
+}
+@media (max-width: 600px) {
+  .category-checkbox {
+    position: absolute !important;
+    left: 0;
+    bottom: 12px;
+    font-weight: 400;
+  }
+  .intro__products {
+    padding-bottom: 28px;
+  }
+  .intro .item-details .delete,
+  .intro .item-details .favourites {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .intro .item-details .counter {
+    position: absolute;
+    right: 0;
+    top: 36px;
+  }
+  .intro .item-details .right {
+    flex-direction: row-reverse;
+    margin-left: -8px;
+    gap: 8px;
+  }
+  .intro .item-details .price-rubl {
+    flex-direction: row-reverse;
+  }
+  .intro .item-details {
+    flex-direction: column;
+  }
+  .intro .item-details {
+    align-items: start;
+  }
+}
+
+/*# sourceMappingURL=basket.css.map */

@@ -1,4 +1,10 @@
-@use "core-styles";
-@use "header";
-@use "main";
-@use "footer";
+@use "../sass/abstracts/variables";
+@use "../sass/abstracts/mixins";
+@use "../sass/vendors/swiper-bundle.css";
+@use "../sass/abstracts/functions";
+@use "../sass/base/reset";
+@use "../sass/pages/basket";
+@use "../sass/pages/all-products.scss";
+@use "../sass/layout/header";
+@use "../sass/layout/main";
+@use "../sass/layout/footer";

@@ -16,7 +16,7 @@
   }
   .left-box {
     max-width: 800px;
-    background-image: url("../images/man-bg.png");
+    background-image: url("/images/man-bg.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -305,7 +305,6 @@
     border-radius: 12px;
     background: var(--colors-slate-900, #0f172a);
     color: #fff;
-    width: fit-content;
   }
   .trash {
     z-index: 1;
@@ -332,7 +331,7 @@
     display: flex;
     gap: 32px;
     .left {
-      background-image: url("../images/gift-bg.png");
+      background-image: url("/images/gift-bg.png");
       background-position: center;
       background-repeat: no-repeat;
       padding: 32px;
@@ -380,7 +379,7 @@
     align-items: center;
     padding-block: 81px;
     background-size: cover;
-    background-image: url("../images/login-bg.png");
+    background-image: url("/images/login-bg.png");
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 32px;
@@ -501,7 +500,6 @@
     padding: 24px;
     border-radius: 24px;
     background-color: #f1f5f9;
-    max-width: 384px;
     overflow: hidden;
 
     .user {
@@ -664,9 +662,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .reviews .card {
-    max-width: 314px;
-  }
   .smartphones .cards,
   .laptops .cards {
     display: grid;
@@ -677,22 +672,73 @@
   .laptops .card {
     padding: 0;
   }
+  .intro .container .title{
+    font-size: 24px;
+  }
+  .intro .right-box .title{
+    font-size: 20px;
+  }
+  .intro .left-box .choose-btn{
+    padding: 8px 12px;
+  }
+  .intro .left-box .swiper-pagination{
+    left: 16px;
+    bottom: 16px;
+  }
+  .intro .bargain-box{
+    font-size: 12px;
+  }
   .smartphones .gift,
   .laptops .gift {
     display: none;
+  }
+  .intro .swiper-slide{
+    padding: 16px;
+  }
+  .intro .left-box,
+  .intro .right-box{
+    border-radius: 16px;
   }
   .gift-prize .container .left{
     flex-direction: column;
     align-items: start;
     gap: 15px !important;
   }
+  .intro .time-box .time{
+    border-radius: 4px;
+    padding: 6px;
+    line-height: 110%;
+  }
+  .intro .cart{
+    margin-bottom: 16px;
+  }
+  .intro .right-box .swiper-pagination{
+    left: 16px;
+  }
   .gift-prize .container .title{
     font-size: 22px;
     max-width: unset;
   }
+  .login .login-box{
+    flex-direction: column;
+    .send{
+      width: 100% !important;
+    }
+    .email{
+      width: 100% !important;
+    }
+  }
+  .login-overlay{
+    padding-block: 40px !important;
+    border-radius: 16px !important;
+    padding-inline: 16px !important;
+  }
+  .reviews .navigation-bar{
+    gap: 20px;
+  }
 }
-@media(max-width: 650px){
-  .reviews{
+@media (max-width: 600px) {
+  .reviews .title-box .all{
     display: none;
   }
 }
@@ -761,10 +807,6 @@
     justify-content: center;
     align-items: center;
   }
-  .intro .left-box .title {
-    font-size: 30px !important;
-    margin-block: 8px !important;
-  }
   .intro .left-box .desc {
     font-size: 14px;
   }
@@ -782,10 +824,11 @@
       flex-direction: column;
       align-items: start;
       padding: 16px;
+      border-radius: 16px;
     }
     .all {
-      padding: 8px 32px;
-      width: 100%;
+      padding: 8px 12px;
+      border-radius: 8px;
     }
     .title {
       font-size: 20px;
@@ -797,10 +840,6 @@
   }
   .login-box {
     flex-direction: column;
-    .email,
-    .send {
-      width: 90%;
-    }
   }
   .login .title {
     font-size: 20px;
